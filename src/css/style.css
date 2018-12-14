@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Sorts+Mill+Goudy');
 
 body{
-  
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: inherit;
@@ -138,27 +138,23 @@ header label{
   margin-left: 10px;
   color:rgb(233, 233, 233);
   text-decoration: none;
+  background-color: rgb(189, 189, 189, 0.2);
   border: 1px solid rgb(233, 233, 233, 0.5);
   font-family: 'Sorts Mill Goudy', serif;
 }
 
 #banner a:hover{
-  background:rgba(10, 31, 40, 0.80);
+  background:rgba(23, 50, 136, 0.8);
   color:rgb(233, 233, 233); 
 }
 
 /*********************************CAMPEONES*****************************/
 
-#bienvenida{
-  background-color: rgb(0, 0, 0);
-  top: 0;
-}
-
 #bienvenida h2{
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 28px;
-  color:rgb(243, 149, 62);
+  color:rgb(241, 175, 112);
 }
 
 #bienvenida p{
@@ -166,27 +162,128 @@ header label{
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
-  color: rgb(68, 68, 68);
+  color: rgb(153, 150, 150);
+  margin: 10px  auto;
+}
+
+.img-del-campeon{
+  width: 100%;
+}
+
+.nombre-del-campeon{
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 38px;
+  font-weight: bolder;
+  font-variant-caps: all-small-caps;
+  color: rgb(20, 20, 20);
+}
+
+.titulo-del-campeon{
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 20px;
+  color: rgb(117, 85, 26);
+}
+
+.blurb-del-campeon{
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(27, 27, 27);
+  padding: 7px; 
+}
+.niveles-del-campeon{
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: rgb(15, 12, 6);
+  padding: 5px; 
+  margin: 6px;
+  padding-bottom: 15px;
+}
+
+.rol-del-campeon{
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 20px;
+  color: rgb(117, 85, 26);
+  background-color: #000000;
 }
 
 .elemento{
-  flex:1;
   flex-basis: 200px;
   height: 400px;
 
   margin: 5px;
   text-align: center;
   align-content: center;
-  border: 5px ridge rgb(153, 153, 153);
-  background-color: rgb(255, 255, 255, 0.9);
+  border: 5px double rgb(185, 185, 185);
+  border-radius: 3px;
+  background-color: rgba(248, 224, 196, 0.9);
 }
 
 #descripion-de-los-top-5{
-  display: flex;
   position: relative;
   align-content: center;
   color: rgb(29, 29, 29);
+}
+
+div #todos-los-campeones{
+  display: block;
+  margin: auto;
+  align-content: center;
+}
+
+#todos-los-campeones{
+  background: #ffd56b;
+  background-image: -webkit-linear-gradient(top, #ffd56b, #664100);
+  background-image: linear-gradient(to bottom, #ffd56b, #664100);
+  border-radius: 10px;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #161616;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
   
- 
+#todos-los-campeones:hover {
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+.video-container{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0;
+  
+  }
+    
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.end p{
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 25px;
+  color:rgb(238, 240, 235);
+  padding: 10px;
+  
+}
+
+
+/************ESTILO DEL FOOTER*****************/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(128, 128, 128);
+  font-size: 0.7em;
+  padding: 0.5rem;
+  background-color: rgb(217, 217, 217);
+  margin-bottom: 0;
+  margin-top: 3rem;
 }
 
