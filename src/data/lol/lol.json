@@ -834,6 +834,7 @@
     "Cassiopeia": {
       "version": "6.24.1",
       "id": "Cassiopeia",
+      "top": "top5",
       "key": "69",
       "name": "Cassiopeia",
       "title": "the Serpent's Embrace",
@@ -2957,6 +2958,7 @@
     "KogMaw": {
       "version": "6.24.1",
       "id": "KogMaw",
+      "bestChampeons": "top5",
       "key": "96",
       "name": "Kog'Maw",
       "title": "the Mouth of the Abyss",
@@ -3682,6 +3684,7 @@
     "Mordekaiser": {
       "version": "6.24.1",
       "id": "Mordekaiser",
+      "bestChampeons": "top5",
       "key": "82",
       "name": "Mordekaiser",
       "title": "the Iron Revenant",
@@ -4772,6 +4775,7 @@
     "Shaco": {
       "version": "6.24.1",
       "id": "Shaco",
+      "bestChampeons": "top5",
       "key": "35",
       "name": "Shaco",
       "title": "the Demon Jester",
@@ -5134,6 +5138,7 @@
     "Sona": {
       "version": "6.24.1",
       "id": "Sona",
+      "bestChampeons": "top5",
       "key": "37",
       "name": "Sona",
       "title": "Maven of the Strings",
