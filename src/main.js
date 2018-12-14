@@ -1,5 +1,6 @@
 const objectSetOfChampeons = LOL.data;
-const arraySetOfChampeons = Object.keys(LOL.data); //La data tiene indices
+const arraySetOfChampeons = Object.keys(LOL.data); //La data tiene indices :(
+const entriesOfChampeons = Object.entries(LOL.data);
 //const propertyChampeons = arraySetOfChampeons(Object.value("top5"))
 //console.log(propertyChampeons);
 
@@ -10,7 +11,7 @@ const arraySetOfChampeons = Object.keys(LOL.data); //La data tiene indices
     
     return 
 }*/
-
+/*
 const champeon1 = objectSetOfChampeons[arraySetOfChampeons[16]];
 const champeon2 = objectSetOfChampeons[arraySetOfChampeons[57]];
 const champeon3 = objectSetOfChampeons[arraySetOfChampeons[71]];
@@ -27,9 +28,6 @@ const champeons = [champeon1, champeon2, champeon3, champeon4, champeon5];
 //console.log(checkChampeons);
 
 //////////////////////////////////////////////////////////
-function indexOfChampeons (){
-    return arraySetOfChampeons = champeons[16][57][71][92][99];
-}
 
 function showChampeons (){
    document.getElementById("primer-campeon").innerHTML = champeons.filter(indexOfChampeons);
@@ -37,14 +35,32 @@ function showChampeons (){
 //console.log(showChampeons);
 
 
+const champeonsMap = arraySetOfChampeons.filter(arraySetOfChampeons => arraySetOfChampeons.top = "top5");
+//const champeonsFilter = arraySetOfChampeons.filter(objectSetOfChampeons => objectSetOfChampeons.indexOf = "0");
+console.log(champeonsMap);
+*/
 
-const champeonsFilter = arraySetOfChampeons.filter(arraySetOfChampeons => arraySetOfChampeons.top = "top5")
-console.log(champeonsFilter);
+//6to intento
 
+const freeChampeonWeekly = [];
+const allChampeonWeekly = [];
+const champions = [];
 
+//const gettingFreeChampeons = entriesOfChampeons.filter(currentChampeons => console.log(currentChampeons));
+const gettingFreeChampeons3 = entriesOfChampeons.map(currentChampeons => allChampeonWeekly << currentChampeons);
+//console.log(gettingFreeChampeons3)
+for (var [key, value] of entriesOfChampeons) {
+    if (value.top ==='top5') {
+        console.log("Campion de la semana:" + value.name)
+    }
+}
+
+//var newArray = entriesOfChampeons.filter(function(currentChampeon){
+//    return currentChampeon.top === 'top5'
+//});
+//console.log(newArray)
+ 
 //Arroja el campeon y RECORRE LOS INDICES
-
-
 //escoger la data 5 campeones
 //Mostrar Nombre del champion, titulo, Imagen principal, Descripción
 //Mostrar su nivel de ataque, defense, resistencia, nivel de dificultad

@@ -838,6 +838,7 @@ var LOL = {
     Cassiopeia: {
       version: "6.24.1",
       id: "Cassiopeia",
+      top: "top5",
       key: "69",
       name: "Cassiopeia",
       title: "the Serpent's Embrace",
@@ -2969,6 +2970,7 @@ var LOL = {
     KogMaw: {
       version: "6.24.1",
       id: "KogMaw",
+      top: "top5",
       key: "96",
       name: "Kog'Maw",
       title: "the Mouth of the Abyss",
@@ -3697,6 +3699,7 @@ var LOL = {
     Mordekaiser: {
       version: "6.24.1",
       id: "Mordekaiser",
+      top: "top5",
       key: "82",
       name: "Mordekaiser",
       title: "the Iron Revenant",
@@ -4789,6 +4792,7 @@ var LOL = {
     Shaco: {
       version: "6.24.1",
       id: "Shaco",
+      top: "top5",
       key: "35",
       name: "Shaco",
       title: "the Demon Jester",
@@ -5153,6 +5157,7 @@ var LOL = {
     Sona: {
       version: "6.24.1",
       id: "Sona",
+      top: "top5",
       key: "37",
       name: "Sona",
       title: "Maven of the Strings",
