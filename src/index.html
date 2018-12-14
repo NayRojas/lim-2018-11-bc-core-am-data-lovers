@@ -3,53 +3,150 @@
   <head>
     <meta charset="utf-8">
     <title>League of Legend Data</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="image/png" href="https://vignette.wikia.nocookie.net/leagueoflegendsoficial/images/8/8c/LOL_Logo.png/revision/latest?cb=20180119195439&path-prefix=es"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/icon-game-lol.png"/>
   </head>
+
+
   <body>
-
-
-    <!-- ESTE ES EL HEADER Y BANNER DE LA PRIMERA PANTALLA -->
-    <header>
-      <img id="logo" src="" alt="logo">
-    </header>
-    <main id="banner">
-      <img src="" alt="banner">
-      <div>
-      <h1></h1>
+<!-- ESTE ES EL HEADER Y BANNER DE LA PRIMERA PANTALLA -->
+    <header >
+        <div class="container">
+          <img class ="logo" src="img/icon-lol.png" alt="logo">
+          <input type="checkbox" id="menu-bar"> 
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a href="">HOME</a>
+            <a href="">ROLES</a>
+            <a href="">CAMPEONES</a>
+            <a href="">GUÍA RÁPIDA</a>
+          </nav>
       </div>
+    </header>
+<!--Este es el banner-->
+    <main>
+      <section id="banner">
+        <img src="http://www.lol-wallpapers.com/wp-content/uploads/2018/12/Neeko-by-Haoyu-Feng-HD-Wallpaper-Background-Fan-Art-Artwork-League-of-Legends-lol-1024x576.jpg" alt="banner">
+        <div class="container">
+          <img id="logo-lol" src="img/logo-lol.png" alt="logo-lol">
+          <h1>La Guía del Nuevo Jugador, !Ya Disponible!</h1>
+          <a href="#">Aquí</a>
+        </div>
+      </section>
     </main>
     
-    <!-- ESTE SECTION MUESTRA LA PRIMERA HISTORIA DE USUARIO - TOP 5 -->
-    <Section>
-      <p id="descripcion-del-ranking-ejemplo"></p>
-      <div id="descripiones-de-los-top-5">
-        <div id="primer-campeon">
-          <h4 id="nombre-del-campeon"></h4>
-          <img src="" alt="">
+    <!-- ESTE SECTION MUESTRA LA PRIMERA HISTORIA DE USUARIO - TOP 5-->
+    <section id="bienvenida">
+      <h2>Conoce los 5 Mejores Campeones</h2>
+      <p>¡Y empieza tu viaje por la Ruta del Invocador!</p>
+    </section>
+    <Section id="top-cinco">
+      <div class ="container justify-content" id="descripion-de-los-top-5">
+        <div class ="elemento primer-campeon">
+          <h4 id="nombre-del-campeon">Aatroox</h4>
+          <img src="https://www.mobafire.com/images/champion/square/aatrox.png" alt="aatrox">
           <p>
+            The Darkin Blade           
+          <p> 
+            "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold.
+          </p>
+          <div>
+            <label class="icon-gitlab" for="Atack" >Ataque</label>
+            <label class="icon-first-order" for="defense">Defensa</label>
+            <label class="icon-magic" for="magic">Magia</label>
+            <label class="icon-flattr" for="Didiculty">Dificultad</label>
+          </div>
+        </div>
+        <div class ="elemento segundo-campeon" >
+          <h4 id="nombre-del-campeon">Aatroox</h4>
+          <img src="img/icon-game-lol.png" alt="">
+          <p>
+            Titulo del campeon
             <!-- acá podrian ir el rol del campeon-->
           </p>
           <p>
+            Este es la descripcion
             <!-- acá podrian ir la descripción (blurb)-->
           </p>
           <div>
+            <p>nivel 1</p>
+            <p>nivel 2</p>
+            <p>nivel 3</p>
+            <p>nivel 4</p>
+            <!-- acá podrian ir los niveles -->
+          </div>
+        </div>  
+        <div class ="elemento  tercer-campeon">
+          <h4 id="nombre-del-campeon">Aatroox</h4>
+          <img src="img/icon-game-lol.png" alt="">
+          <p>
+            Titulo del campeon
+            <!-- acá podrian ir el rol del campeon-->
+          </p>
+          <p>
+            Este es la descripcion
+            <!-- acá podrian ir la descripción (blurb)-->
+          </p>
+          <div>
+            <p>nivel 1</p>
+            <p>nivel 2</p>
+            <p>nivel 3</p>
+            <p>nivel 4</p>
             <!-- acá podrian ir los niveles -->
           </div>
         </div>
-        <div id="segundo-campeon"></div>
-        <div id="tercer-campeon"></div>
-        <div id="cuarto-campeon"></div>
-        <div id="quinto-campeon"></div>
+        <div  class ="elemento cuarto-campeon">
+          <h4 id="nombre-del-campeon">Aatroox</h4>
+          <img src="img/icon-game-lol.png" alt="">
+          <p>
+            Titulo del campeon
+            <!-- acá podrian ir el rol del campeon-->
+          </p>
+          <p>
+            Este es la descripcion
+            <!-- acá podrian ir la descripción (blurb)-->
+          </p>
+          <div>
+            <p>nivel 1</p>
+            <p>nivel 2</p>
+            <p>nivel 3</p>
+            <p>nivel 4</p>
+            <!-- acá podrian ir los niveles -->
+          </div>
+        </div>
+        <div class ="elemento  quinto-campeon">
+          <h4 id="nombre-del-campeon">Aatroox</h4>
+          <img src="img/icon-game-lol.png" alt="">
+          <p>
+            Titulo del campeon
+            <!-- acá podrian ir el rol del campeon-->
+          </p>
+          <p>
+            Este es la descripcion
+            <!-- acá podrian ir la descripción (blurb)-->
+          </p>
+          <div>
+            <p>nivel 1</p>
+            <p>nivel 2</p>
+            <p>nivel 3</p>
+            <p>nivel 4</p>
+            <!-- acá podrian ir los niveles -->
+          </div>
+        </div>
       </div>
     </Section>
 
 <!-- OPCIÓN QUE PERMITE IR A LOS TIPOS DE ROL -->
-
-    <button id="campeones-por-rol"></button>
+    <div id="todos-los-campeones">
+      <button type="button">Conoce todos los campeones</button>
+    </div>
+    
 
     <footer></footer>
 
+    
 
     <div id="root"></div>
     <!-- <script src="./data/injuries/injuries.js"></script> -->
@@ -59,5 +156,6 @@
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <!--<script src=”prefixfree.min.js” type="text/javascript"></script> -->
   </body>
 </html> 

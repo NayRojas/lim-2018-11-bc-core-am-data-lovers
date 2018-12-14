@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Sorts+Mill+Goudy');
+
+body{
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: inherit;
+  font-family: sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/*********************************HEADER*****************************/
+header{
+  width: 100%;
+  height: 60px;
+  background: #000000;
+  color: rgb(212, 170, 115);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; /*Lo coloca por encima de los demas elementos*/
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  width: 98%;
+  margin: auto;
+}
+
+header .container{
+  display: table;
+}
+
+.logo{
+  width: 105px;
+  height:30px;
+  position: relative;
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+/*********************************MENU*****************************/
+#menu-bar{
+  display: none;
+}
+
+header label{
+  float: right;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.menu{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(7, 7, 14, 0.9);
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu a{
+  display:block;
+  color:#E9C361;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 0.5px solid rgba(255,255,255, 0.5);
+}
+
+.menu a:hover{
+  background: rgba(255,255,255, 0.3);
+}
+
+#menu-bar:checked ~ .menu{
+  transform: translateX(0%);
+}
+
+/*********************************BANNER*****************************/
+
+#logo-lol{
+  width: 30px;
+  height: 15px;
+  margin:20px auto 0;
+  text-align: center;
+  display: block;
+  float: left;
+  display: none;
+}
+
+#banner{
+  margin-top: 50px;
+  position: relative;
+}
+
+#banner img{
+  width: 100%;
+  height: 100%;
+}
+
+#banner .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  color: rgb(233, 233, 233);
+}
+
+#banner h1{
+  font-size: 20px;
+  width: 90%;
+  float: left;
+  padding: 10px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 500;
+  text-shadow:3px 3px 10px black;
+}
+
+#banner a{
+  display: block;
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 7px;
+  margin-left: 10px;
+  color:rgb(233, 233, 233);
+  text-decoration: none;
+  border: 1px solid rgb(233, 233, 233, 0.5);
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+#banner a:hover{
+  background:rgba(10, 31, 40, 0.80);
+  color:rgb(233, 233, 233); 
+}
+
+/*********************************CAMPEONES*****************************/
+
+#bienvenida{
+  background-color: rgb(0, 0, 0);
+  top: 0;
+}
+
+#bienvenida h2{
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 28px;
+  color:rgb(243, 149, 62);
+}
+
+#bienvenida p{
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: rgb(68, 68, 68);
+}
+
+.elemento{
+  flex:1;
+  flex-basis: 200px;
+  height: 400px;
+
+  margin: 5px;
+  text-align: center;
+  align-content: center;
+  border: 5px ridge rgb(153, 153, 153);
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+#descripion-de-los-top-5{
+  display: flex;
+  position: relative;
+  align-content: center;
+  color: rgb(29, 29, 29);
+  
+ 
+}
+
