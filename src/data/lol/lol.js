@@ -4799,7 +4799,7 @@ var LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Shaco.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shack_0.jpg",
+        "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
       blurb:
         "Most would say that death isn't funny. It isn't, unless you're Shaco - then it's hysterical. He is Valoran's first fully functioning homicidal comic; he jests until someone dies, and then he laughs. The figure that has come to be known as the Demon ...",
       info: {

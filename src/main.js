@@ -157,7 +157,7 @@ window.onload = function(){
             console.log("current key: " + keys[index])
             console.log("current value: " + values[index])
             
-            if (keys[steps]=='attack') {
+            /*if (keys[steps]=='attack') {
                 const champeonLevelsText = document.createTextNode(keys[steps])
                 champeonLevels.appendChild(champeonLevelsText)
 
@@ -176,14 +176,27 @@ window.onload = function(){
                 champeonLevels.appendChild(champeonLevelsSpan)
 
                 document.getElementById("niveles-del-campeon").appendChild(champeonLevels);
-            }
+            }*/
         }
    
     }
 
  }
       
+ window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTop").style.display = "block";
+  } else {
+    document.getElementById("scrollToTop").style.display = "none";
+  }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
       
 
       
