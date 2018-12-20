@@ -1,34 +1,37 @@
-    
-// JS TEMPLATE FOR TOP 5
-// ESTE ES EL TEMPLATE
+
 window.onload = function() {
   for (i = 0; i < newArray.length; i++) {
     // Aqui he creado el div(Clase y el ID) madre del primer campeon
     const fatherDiv = document.createElement('div');
-    const valueFatherClass = document.createAttribute('class');
+    fatherDiv.className = 'campeones elemento primer-campeon';
+    fatherDiv.id = 'descripion-de-los-top-5';
+    /* const valueFatherClass = document.createAttribute('class');
     valueFatherClass.value = 'campeones elemento primer-campeon';
     fatherDiv.setAttributeNode(valueFatherClass);
 
+  
     const valueFatherId = document.createAttribute('id');
     valueFatherId.value = 'primer-campeon';
     fatherDiv.setAttributeNode(valueFatherId);
-    document.getElementById('descripion-de-los-top-5').appendChild(fatherDiv);
+    document.getElementById('descripion-de-los-top-5').appendChild(fatherDiv);*/ 
 
     // Aqui he creado el img principal del primer campeon
     const champeonImage = document.createElement('img');
     champeonImage.className = 'img-del-campeon';
+    champeonImage.alt = 'imagen-del-campeon';
+    champeonImage.src = newArray[i].splash;
     /* const champeonImageClass = document.createAttribute("class");
             champeonImageClass.value = "img-del-campeon";
             champeonImage.setAttributeNode(champeonImageClass);*/
     // su alt
-    const champeonImageAlt = document.createAttribute('alt');
+    /* const champeonImageAlt = document.createAttribute('alt');
     champeonImageAlt.value = 'imagen-del-campeon';
     champeonImage.setAttributeNode(champeonImageAlt);
     // su src
     const champeonImageSrc = document.createAttribute('src');
     champeonImageSrc.value = newArray[i].splash;
     champeonImage.setAttributeNode(champeonImageSrc);
-    document.getElementById('primer-campeon').appendChild(champeonImage);
+    document.getElementById('primer-campeon').appendChild(champeonImage);*/
 
     // Aqui he creado el nombre del primer campeon
     // su clase
