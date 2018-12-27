@@ -1,159 +1,62 @@
+document.getElementById('primera-pantalla').style.display = 'block';
+document.getElementById('segunda-pantalla').style.display = 'none';
+
 const containerList = document.getElementById('descripion-de-los-top-5');
+const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
+const containerRoles = document.getElementById('segunda-pantalla');
 
-const createTemplateChampeonsFive = (array) => {
-  let templateListOfCards = ' ';  
+const roles = [
+  {img: 'img/asesino', name: 'Asesino'},
+  {img: 'img/tank', name: 'Tanque'},
+  {img: 'img/mago', name: 'Mago'},
+  {img: 'img/soporte', name: 'Soporte'},
+  {img: 'img/tirador', name: 'Tirador'},
+  {img: 'img/fighter', name: 'Luchador'},
 
-  array.forEach((newArray) => {
-    const card = `
-      <div id="primer-campeon" class ="campeones elemento primer-campeon">
-      <img class="img-del-campeon" src= '${ window.newArray.splash }' alt="aatrox"/>
-      <h4 class="nombre-del-campeon">${ window.newArray.name }</h4>
-      <p class="titulo-del-campeon">${ window.newArray.title }</p>
-      <p class="blurb-del-campeon">${ window.newArray.blurb } </p>
-      <div class="niveles-del-campeon">
-      <label class="icon-gitlab" for="Attack" >Ataque<span>${ window.newArray.info[0] }</span></label>
-      <label class="icon-first-order" for="defense">Defensa<span>${ window.newArray.info[1] }</span></label>
-      <label class="icon-magic" for="magic">Magia<span>${ window.newArray.info[2] }</span></label>
-      <label class="icon-flattr" for="dificulty">Dificultad<span>${ window.newArray.info[3] }</span></label>
+];
+
+/* FUNCIÓN DE LA PRIMERA HISTORIA: MOSTRAR 5 CAMPEONES */
+const champions = lol.getFiveChampeons(window.LOL.data);
+champions.forEach((top5champions, index) => {
+  // console.log(champions[index].info)
+  // console.log(champions[index].info.defense)
+  const card = `
+      <div id="primer-campeon" class ='campeones elemento primer-campeon'>
+      <img class='img-del-campeon' src= '${ champions[index].splash }' alt='${ champions[index].name }'/>
+      <h4 class='nombre-del-campeon'>${ champions[index].name }</h4>
+      <p class='titulo-del-campeon'>${ champions[index].title }</p>
+      <p class='blurb-del-campeon'>${ champions[index].blurb } </p>
+      <div class='niveles-del-campeon'>
+      <label class='icon-gitlab" for="Attack' >Ataque <span>${ champions[index].info.attack }</span></label>
+      <label class='icon-first-order' for='defense'>Defensa <span>${ champions[index].info.defense }</span></label>
+      <label class='icon-magic' for='magic'>Magia <span>${ champions[index].info.magic }</span></label>
+      <label class='icon-flattr'for='dificulty'>Dificultad <span>${ champions[index].info.difficulty }</span></label>
       </div>
       </div>`;
+  window.templateListOfCards += card;
+});
+containerList.innerHTML = window.templateListOfCards;
 
-    templateListOfCards += card;
-  });
+/* FUNCIÓN DE LA SEGUNDA HISTORIA: MOSTRAR LOS ROLES */
+const champeonsRole = lol.getRoles(roles);
+console.log(champeonsRole);
 
-  containerList.innerHTML = templateListOfCards; 
-};
+champeonsRole.forEach((allRoles, index2) => {
 
-(createTemplateChampeonsFive(newArray));
-
-
-// La aplicación de los tests debe hacerse si o si antes de la funcionalidad
-/* 
-let arrayLenght = window.newArray.length;
-window.onload = function() {
-  for (let i = 0; i < arrayLenght; i++) {
-    // Aqui he creado el div(Clase y el ID) madre del primer campeon
-    const fatherDiv = document.createElement('div');
-    fatherDiv.className = 'campeones elemento primer-campeon';
-    const valueFatherClass = document.createAttribute('class');
-    valueFatherClass.value = 'campeones elemento primer-campeon';
-    fatherDiv.setAttributeNode(valueFatherClass);
-
-    // Aqui he creado el img principal del primer campeon
-    const champeonImage = document.createElement('img');
-    champeonImage.className = 'img-del-campeon';
-    /* const champeonImageClass = document.createAttribute("class");
-            champeonImageClass.value = "img-del-campeon";
-            champeonImage.setAttributeNode(champeonImageClass);*/
-/* su alt
-    const champeonImageAlt = document.createAttribute('alt');
-    champeonImageAlt.value = 'imagen-del-campeon';
-    champeonImage.setAttributeNode(champeonImageAlt);
-    // su src
-    const champeonImageSrc = document.createAttribute('src');
-    champeonImageSrc.value = window.newArray[i].splash;
-    champeonImage.setAttributeNode(champeonImageSrc);
-    document.getElementById('primer-campeon').appendChild(champeonImage);
-
-    // Aqui he creado el nombre del primer campeon
-    // su clase
-    const champeonName = document.createElement('h4');
-    const champeonNameClass = document.createAttribute('class');
-    champeonNameClass.value = 'nombre-del-campeon';
-    champeonName.setAttributeNode(champeonNameClass);
-
-    // su nombre en text
-    const champeonNameText = document.createTextNode(window.newArray[i].name);
-    champeonName.appendChild(champeonNameText);
-    document.getElementById('primer-campeon').appendChild(champeonName);
-
-    // Aqui he creado el titulo del primer campeon
-    // su clase
-    const champeonTitle = document.createElement('p');
-    const champeonTitleClass = document.createAttribute('class');
-    champeonTitleClass.value = 'titulo-del-campeon';
-    champeonTitle.setAttributeNode(champeonTitleClass);
-
-    // su titulo en text
-    const champeonTitleName = document.createTextNode(window.newArray[i].title);
-    champeonTitle.appendChild(champeonTitleName);
-    document.getElementById('primer-campeon').appendChild(champeonTitle);
-
-    // Aqui he creado el blurb del primer campeon
-    // su clase
-    const champeonBlurb = document.createElement('p');
-    const champeonBlurbClass = document.createAttribute('class');
-    champeonBlurbClass.value = 'blurb-del-campeon';
-    champeonBlurb.setAttributeNode(champeonBlurbClass);
-
-    // su titulo en text
-    const champeonBlurbText = document.createTextNode(window.newArray[i].blurb);
-    champeonBlurb.appendChild(champeonBlurbText);
-    document.getElementById('primer-campeon').appendChild(champeonBlurb);
-
-    const divLevels = document.createElement('div');
-
-    const divLevelsId = document.createAttribute('id');
-    divLevelsId.value = 'niveles-del-campeon';
-    divLevels.setAttributeNode(divLevelsId);
-
-    const divLevelsClass = document.createAttribute('class');
-    divLevelsClass.value = 'niveles-del-campeon';
-    divLevels.setAttributeNode(divLevelsClass);
-
-    document.getElementById('primer-campeon').appendChild(divLevels);
-
-    /* Info
-    info = Object.entries(window.newArray[i].info);
-
-        
-    for (index = 0; index < 3; index++) {
-      const champeonLevels = document.createElement('LABEL');
-
-      keys = Object.keys(info[index]);
-      values = Object.values(info[index]);
-
-      // console.log('current key: ' + keys[index]);
-      // console.log('current value: ' + values[index]);
-            
-      /* if (keys[steps]=='attack') {
-                const champeonLevelsText = document.createTextNode(keys[steps])
-                champeonLevels.appendChild(champeonLevelsText)
-
-                const champeonLevelsClass = document.createAttribute("class");
-                champeonLevelsClass.value = "icon-gitlab";
-                champeonLevels.setAttributeNode(champeonLevelsClass);
-                
-                const champeonLevelsFor = document.createAttribute("for");
-                champeonLevelsFor.value = keys[steps]
-                champeonLevels.setAttributeNode(champeonLevelsFor)
-
-                const champeonLevelsSpan = document.createElement("SPAN");
-                const champeonLevelsSpanText = document.createTextNode(values[steps])
-                champeonLevelsSpan.appendChild(champeonLevelsSpanText)
-                
-                champeonLevels.appendChild(champeonLevelsSpan)
-
-                document.getElementById("niveles-del-campeon").appendChild(champeonLevels);
-            }
-  }
-}; */
+  const roleCard = `
+    <h1 id='roles-titulo'>Roles en el juego</h1>
+    <div id='card-role elemento'>
+      <img class='img-del-rol' src= '${ champeonsRole[index2].img }' alt='${ champeonsRole[index2].name }'/>
+      <p class= 'cantidad-de-campeones'></p>
+    </div>`;
+  window.templateListOfRoles += roleCard;
+});
+containerRoles.innerHTML = window.templateListOfRoles;
 
 
-window.onscroll = function() {
-  scrollFunction(),
-  topFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('scrollToTop').style.display = 'block';
-  } else {
-    document.getElementById('scrollToTop').style.display = 'none';
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+/* PRIMERA HISTORIA: Boton */
+buttonToRoleOfChampeons.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'block';
+  champeonsRole();
+});

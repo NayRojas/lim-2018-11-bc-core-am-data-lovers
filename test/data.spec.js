@@ -4,7 +4,7 @@ require('../src/data.js');
 
 describe('window.dataLOL', () => {
   it('debería ser una objeto', () => {
-    expect(typeof window.dataLOL).toBe('object');
+    expect(typeof window.lol).toBe('object');
   });
 });
 

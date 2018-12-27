@@ -154,7 +154,7 @@ header label{
 
 /*********************************CAMPEONES*****************************/
 
-#bienvenida h2{
+#bienvenida h2, #roles-titulo{
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 28px;
@@ -213,7 +213,7 @@ header label{
 
 .elemento{
   flex-basis: 200px;
-  height: 390px;
+  height: 415px;
 
   margin: 5px;
   text-align: center;

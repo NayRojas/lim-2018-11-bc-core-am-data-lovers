@@ -1,15 +1,29 @@
-const entriesOfChampeons = Object.entries(LOL.data);
-
-const newArray = () => {
-  Object.assign(entriesOfChampeons.map(currentChampeon => currentChampeon[1]).filter(currentChampeon => currentChampeon.top === 'top5'))
+const createTemplateChampeonsFive = (array) => {
+  // console.log('Esto es' + array);
+  
+  let newChampionArray = Object.values(array);
+  const champions = newChampionArray.reduce(function(result, champion) {
+    if (champion.top === 'top5') {
+      result.push(champion);
+    }
+    return result;
+  }, []);
+  return champions;
 };
 
-window.dataLOL = {
-  newArray, 
+
+const createCardsRoles = (array2) => {
+  let newRoleArray = Object.values(array2);
+ /* const rolesOfChampeons = newRoleArray.reduce(function(result, role) {
+    if (LOL.tag === 'tank') {
+      let result = '';
+      result += 1;
+    }
+  });
+  return rolesOfChampeons;*/
 };
 
-/* entriesOfChampeons.map(function(champeons) {
-  champeons[1].top = '';
-  return champeons;
-}); */
-
+window.lol = {
+  getFiveChampeons: createTemplateChampeonsFive,
+  getRoles: createCardsRoles,
+};
