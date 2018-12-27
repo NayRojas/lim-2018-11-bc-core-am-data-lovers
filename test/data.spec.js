@@ -2,12 +2,14 @@
 
 require('../src/data.js');
 
-describe('LOL', () => {
-  it('debería ser una función', () => {
-    expect(typeof window.LOL).toBe('function');
-  });
-
-  it('deberia mostrar los 5 campeones de la semana', () => {
-    expect(newArray()).toBe('example');
+describe('window.dataLOL', () => {
+  it('debería ser una objeto', () => {
+    expect(typeof window.dataLOL).toBe('object');
   });
 });
+
+/*
+  it('deberia mostrar los 5 campeones de la semana', () => {
+    expect(()).toBe('example');
+  });
+*/

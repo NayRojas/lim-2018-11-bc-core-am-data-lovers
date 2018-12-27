@@ -1,37 +1,59 @@
+const containerList = document.getElementById('descripion-de-los-top-5');
 
+const createTemplateChampeonsFive = (array) => {
+  let templateListOfCards = ' ';  
+
+  array.forEach((newArray) => {
+    const card = `
+      <div id="primer-campeon" class ="campeones elemento primer-campeon">
+      <img class="img-del-campeon" src= '${ window.newArray.splash }' alt="aatrox"/>
+      <h4 class="nombre-del-campeon">${ window.newArray.name }</h4>
+      <p class="titulo-del-campeon">${ window.newArray.title }</p>
+      <p class="blurb-del-campeon">${ window.newArray.blurb } </p>
+      <div class="niveles-del-campeon">
+      <label class="icon-gitlab" for="Attack" >Ataque<span>${ window.newArray.info[0] }</span></label>
+      <label class="icon-first-order" for="defense">Defensa<span>${ window.newArray.info[1] }</span></label>
+      <label class="icon-magic" for="magic">Magia<span>${ window.newArray.info[2] }</span></label>
+      <label class="icon-flattr" for="dificulty">Dificultad<span>${ window.newArray.info[3] }</span></label>
+      </div>
+      </div>`;
+
+    templateListOfCards += card;
+  });
+
+  containerList.innerHTML = templateListOfCards; 
+};
+
+(createTemplateChampeonsFive(newArray));
+
+
+// La aplicación de los tests debe hacerse si o si antes de la funcionalidad
+/* 
+let arrayLenght = window.newArray.length;
 window.onload = function() {
-  for (i = 0; i < newArray.length; i++) {
+  for (let i = 0; i < arrayLenght; i++) {
     // Aqui he creado el div(Clase y el ID) madre del primer campeon
     const fatherDiv = document.createElement('div');
     fatherDiv.className = 'campeones elemento primer-campeon';
-    fatherDiv.id = 'descripion-de-los-top-5';
-    /* const valueFatherClass = document.createAttribute('class');
+    const valueFatherClass = document.createAttribute('class');
     valueFatherClass.value = 'campeones elemento primer-campeon';
     fatherDiv.setAttributeNode(valueFatherClass);
-
-  
-    const valueFatherId = document.createAttribute('id');
-    valueFatherId.value = 'primer-campeon';
-    fatherDiv.setAttributeNode(valueFatherId);
-    document.getElementById('descripion-de-los-top-5').appendChild(fatherDiv);*/ 
 
     // Aqui he creado el img principal del primer campeon
     const champeonImage = document.createElement('img');
     champeonImage.className = 'img-del-campeon';
-    champeonImage.alt = 'imagen-del-campeon';
-    champeonImage.src = newArray[i].splash;
     /* const champeonImageClass = document.createAttribute("class");
             champeonImageClass.value = "img-del-campeon";
             champeonImage.setAttributeNode(champeonImageClass);*/
-    // su alt
-    /* const champeonImageAlt = document.createAttribute('alt');
+/* su alt
+    const champeonImageAlt = document.createAttribute('alt');
     champeonImageAlt.value = 'imagen-del-campeon';
     champeonImage.setAttributeNode(champeonImageAlt);
     // su src
     const champeonImageSrc = document.createAttribute('src');
-    champeonImageSrc.value = newArray[i].splash;
+    champeonImageSrc.value = window.newArray[i].splash;
     champeonImage.setAttributeNode(champeonImageSrc);
-    document.getElementById('primer-campeon').appendChild(champeonImage);*/
+    document.getElementById('primer-campeon').appendChild(champeonImage);
 
     // Aqui he creado el nombre del primer campeon
     // su clase
@@ -41,7 +63,7 @@ window.onload = function() {
     champeonName.setAttributeNode(champeonNameClass);
 
     // su nombre en text
-    const champeonNameText = document.createTextNode(newArray[i].name);
+    const champeonNameText = document.createTextNode(window.newArray[i].name);
     champeonName.appendChild(champeonNameText);
     document.getElementById('primer-campeon').appendChild(champeonName);
 
@@ -53,7 +75,7 @@ window.onload = function() {
     champeonTitle.setAttributeNode(champeonTitleClass);
 
     // su titulo en text
-    const champeonTitleName = document.createTextNode(newArray[i].title);
+    const champeonTitleName = document.createTextNode(window.newArray[i].title);
     champeonTitle.appendChild(champeonTitleName);
     document.getElementById('primer-campeon').appendChild(champeonTitle);
 
@@ -65,7 +87,7 @@ window.onload = function() {
     champeonBlurb.setAttributeNode(champeonBlurbClass);
 
     // su titulo en text
-    const champeonBlurbText = document.createTextNode(newArray[i].blurb);
+    const champeonBlurbText = document.createTextNode(window.newArray[i].blurb);
     champeonBlurb.appendChild(champeonBlurbText);
     document.getElementById('primer-campeon').appendChild(champeonBlurb);
 
@@ -81,8 +103,8 @@ window.onload = function() {
 
     document.getElementById('primer-campeon').appendChild(divLevels);
 
-    // Info
-    info = Object.entries(newArray[i].info);
+    /* Info
+    info = Object.entries(window.newArray[i].info);
 
         
     for (index = 0; index < 3; index++) {
@@ -113,14 +135,14 @@ window.onload = function() {
                 champeonLevels.appendChild(champeonLevelsSpan)
 
                 document.getElementById("niveles-del-campeon").appendChild(champeonLevels);
-            }*/
-    }
+            }
   }
-};
+}; */
 
 
 window.onscroll = function() {
-scrollFunction();
+  scrollFunction(),
+  topFunction();
 };
 
 function scrollFunction() {
