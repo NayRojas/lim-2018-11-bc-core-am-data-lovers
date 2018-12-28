@@ -12,7 +12,6 @@ const roles = [
   {img: 'img/soporte', name: 'Soporte'},
   {img: 'img/tirador', name: 'Tirador'},
   {img: 'img/fighter', name: 'Luchador'},
-
 ];
 
 /* FUNCIÓN DE LA PRIMERA HISTORIA: MOSTRAR 5 CAMPEONES */
@@ -39,7 +38,7 @@ containerList.innerHTML = window.templateListOfCards;
 
 /* FUNCIÓN DE LA SEGUNDA HISTORIA: MOSTRAR LOS ROLES */
 const champeonsRole = lol.getRoles(roles);
-console.log(champeonsRole);
+
 
 champeonsRole.forEach((allRoles, index2) => {
 

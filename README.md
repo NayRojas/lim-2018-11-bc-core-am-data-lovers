@@ -1,5 +1,59 @@
 # Data Lovers
 
+Introducción
+
+#Definición del producto
+Interfaz que brinda información puntual y digerida para beginners que no tienen experiencia en el juego y requieren conocer lo indispensable para crecer rapidamente en sus jugadas. 
+
+#User Persona
+Definición persona
+¿Quiénes son los principales usuarios de producto?
+¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+Conocer con cual campeón empezar a jugar, sus roles y descubrir los campeones por rol con sus caracteristicas.
+¿Cuándo utilizan o utilizarían el producto?
+
+#Historias de usuario
+Print de pantalla
+Mencionar y explicar brevemente el porque
+Entrevistas y link a ppt
+
+#Diseño de la Interfaz de Usuario
+
+##Prototipo de baja fidelidad
+Print de los prototipos (posible gif)
+Explicar el porque del diseño
+###Testeos de usabilidad
+Sugerencias de usuarios
+
+##Prototipo de alta fidelidad
+Print de los prototipos (posible gif)
+Explicar el porque del diseño, gama colores, tipografia, secuencia, mobile first
+Zeplin
+###Testeos de usabilidad
+Sugerencias de usuarios
+
+#Como usar
+gif 
+
+#Planificación
+Trello
+Issues
+Tablero 
+Google Calendar
+Sprints tomados
+Excel
+
+#Futuras mejoras
+Chat
+Responsive
+Menu funcional
+Video de toda la interfaz
+Aplicación de metodo para rotación de campeones semanal
+Tutorial hablado
+
+
+
 ## Índice
 
 * [Preámbulo](#preámbulo)
