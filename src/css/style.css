@@ -170,7 +170,7 @@ header label{
   margin: 10px  auto;
 }
 
-.img-del-campeon{
+.img-principal{
   width: 100%;
 }
 
@@ -214,14 +214,26 @@ header label{
 .elemento{
   flex-basis: 200px;
   height: 415px;
-
-  margin: 5px;
+  display: block;
+  margin: 10px;
   text-align: center;
   align-content: center;
   border: 5px double rgb(185, 185, 185);
   border-radius: 3px;
   background-color: rgba(248, 224, 196, 0.9);
 }
+
+.elemento-to-roles{
+  flex-basis: 200px;
+  height: 527px;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.elemento-to-roles:hover{
+  border: 5px double rgb(238, 198, 98);
+}
+
 
 #descripion-de-los-top-5{
   position: relative;
@@ -348,3 +360,7 @@ a + a{
   margin-left: 15px;
 }
 
+
+#roles-titulo{
+  color: white;
+}
