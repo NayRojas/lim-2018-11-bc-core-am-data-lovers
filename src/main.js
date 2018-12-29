@@ -5,17 +5,9 @@ const containerList = document.getElementById('descripion-de-los-top-5');
 const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
 const containerRoles = document.getElementById('todos-los-roles');
 const goToHome = document.getElementById('home');
+const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
 const goToTutorial = document.getElementById('ir-a-tutorial');
-
-const roles = [
-  {img: 'img/asesino.jpeg', name: 'Asesino'},
-  {img: 'img/tank.jpeg', name: 'Tanque'},
-  {img: 'img/mago.jpeg', name: 'Mago'},
-  {img: 'img/soporte.jpeg', name: 'Soporte'},
-  {img: 'img/tirador.jpeg', name: 'Tirador'},
-  {img: 'img/fighter.jpeg', name: 'Luchador'},
-];
 
 /* FUNCIÓN DE LA PRIMERA HISTORIA: MOSTRAR 5 CAMPEONES */
 const champions = lol.getFiveChampeons(window.LOL.data);
@@ -41,7 +33,17 @@ containerList.innerHTML = window.templateListOfCards;
 
 /* FUNCIÓN DE LA SEGUNDA HISTORIA: MOSTRAR LOS ROLES */
 
-/* PRIMERA HISTORIA: Boton */
+/* EVENTO EN EL BOTON "Todos los campeones" QUE MUESTRA TODOS LOS ROLES*/
+
+const roles = [
+  {img: 'img/asesino.jpeg', name: 'Asesino'},
+  {img: 'img/tank.jpeg', name: 'Tanque'},
+  {img: 'img/mago.jpeg', name: 'Mago'},
+  {img: 'img/soporte.jpeg', name: 'Soporte'},
+  {img: 'img/tirador.jpeg', name: 'Tirador'},
+  {img: 'img/fighter.jpeg', name: 'Luchador'},
+];
+
 buttonToRoleOfChampeons.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
@@ -61,6 +63,13 @@ buttonToRoleOfChampeons.addEventListener('click', () => {
 goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
+});
+
+/* MENU: Boton para ir a home*/
+goToHome2.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'block'; 
+  document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
 });
 
 /* MENU: Boton para ir a roles*/
