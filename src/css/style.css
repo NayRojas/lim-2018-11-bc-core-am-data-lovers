@@ -90,7 +90,6 @@ header label{
 }
 
 /*********************************BANNER*****************************/
-
 #logo-lol{
   width: 30px;
   height: 15px;
@@ -153,21 +152,20 @@ header label{
 }
 
 /*********************************CAMPEONES*****************************/
-
-#bienvenida h2, #roles-titulo{
+.bienvenida h2{
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 28px;
   color:rgb(241, 175, 112);
 }
 
-#bienvenida p{
+.description-text{
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
-  font-size: 15px;
+  font-size: 17px;
   font-family: 'Lato', sans-serif;
   color: rgb(153, 150, 150);
-  margin: 10px  auto;
+  margin: 10px  10px;
 }
 
 .img-principal{
@@ -223,17 +221,6 @@ header label{
   background-color: rgba(248, 224, 196, 0.9);
 }
 
-.elemento-to-roles{
-  flex-basis: 200px;
-  height: 527px;
-  background-color: rgba(0, 0, 0, 0.9);
-  cursor: pointer;
-}
-
-.elemento-to-roles:hover{
-  border: 5px double rgb(238, 198, 98);
-}
-
 
 #descripion-de-los-top-5{
   position: relative;
@@ -247,6 +234,7 @@ div #todos-los-campeones{
   align-content: center;
 }
 
+/************BOTON TODOS LOS CAMPEONES: Lleva a la segunda historia*****************/
 #todos-los-campeones{
   background: #ffd56b;
   background-image: -webkit-linear-gradient(top, #ffd56b, #664100);
@@ -276,12 +264,33 @@ div #todos-los-campeones{
   
 }
 
+/************VIDEO TUTORIAL*****************/
 iframe{
   display: block;
   margin: auto;
   align-content: center;
 }
 
+/************ESTILO DE SEGUNDA HISTORIA: CARD DE ROLES*****************/
+.elemento-to-roles{
+  flex-basis: 200px;
+  height: 427px;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  border: 5px double rgb(238, 198, 98);
+}
+
+.img-ppl-role{
+  max-height: 417px;
+}
+
+#roles-titulo{
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 28px;
+  color:rgb(241, 175, 112);
+  margin:100px auto 20px auto;
+}
 
 #scrollToTop {
   display: none;
@@ -358,9 +367,4 @@ footer a{
 
 a + a{
   margin-left: 15px;
-}
-
-
-#roles-titulo{
-  color: white;
 }

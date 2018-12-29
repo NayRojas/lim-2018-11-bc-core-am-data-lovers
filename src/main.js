@@ -4,7 +4,8 @@ document.getElementById('segunda-pantalla').style.display = 'none';
 const containerList = document.getElementById('descripion-de-los-top-5');
 const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
 const containerRoles = document.getElementById('todos-los-roles');
-
+const goToHome = document.getElementById('home');
+const goToRoles = document.getElementById('ir-a-roles');
 
 const roles = [
   {img: 'img/asesino.jpeg', name: 'Asesino'},
@@ -46,10 +47,24 @@ buttonToRoleOfChampeons.addEventListener('click', () => {
   roles.forEach((allRoles, index2) => {
     const roleCard = `
       <div class='card-role elemento elemento-to-roles'>
-        <img class='img-principal' src= '${ roles[index2].img }' alt='${ roles[index2].name }'/>
+        <img class='img-principal img-ppl-role' src= '${ roles[index2].img }' alt='${ roles[index2].name }'/>
         <p class= 'cantidad-de-campeones'></p>
       </div>`;
     window.templateListOfRoles += roleCard;
   });
   containerRoles.innerHTML = window.templateListOfRoles;
+});
+
+
+/* HEADER: Boton para volver al inicio*/
+goToHome.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'block';
+  document.getElementById('segunda-pantalla').style.display = 'none';
+});
+
+/* MENU: Boton para ir a roles*/
+goToRoles.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'block';
+  document.getElementById('menu-bar').style.transform = translateX(-100%);
 });

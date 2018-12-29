@@ -10,23 +10,25 @@
   </head>
 
   <body>
-<!-- ESTE ES EL HEADER y MENU-->
+<!-- HEADER y MENU-->
     <header >
         <div class="container">
-          <img class ="logo" src="img/icon2.jpg" alt="logo">
+          <a id='home' href="#primera-pantalla">
+              <img class ="logo" src="img/icon2.jpg" alt="logo">
+          </a>
           <input type="checkbox" id="menu-bar"> 
           <label class="icon-menu" for="menu-bar"></label>
           <nav class="menu">
-            <a href="">HOME</a>
-            <a href="">ROLES</a>
+            <a href="#primera-pantalla">HOME</a>
+            <a id='ir-a-roles' href="#segunda-pantalla">ROLES</a>
             <a href="">CAMPEONES</a>
             <a href="">GUÍA RÁPIDA</a>
           </nav>
       </div>
     </header>
-<!-- DIV QUE ALMACENA TODA LA PRIMERA PANTALLA -->    
+<!-- DIV PADRE DE LA PRIMERA HISTORIA -->    
 <div id= 'primera-pantalla'>
-<!--Este es el banner-->
+<!--Banner-->
   <main>
       <section id="banner">
         <img src="http://www.lol-wallpapers.com/wp-content/uploads/2018/11/Neeko-Splash-Art-HD-4k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-3-1024x604.jpg" alt="banner">
@@ -38,30 +40,33 @@
       </section>
     </main>
     
-<!-- ESTE SECTION MUESTRA LA PRIMERA HISTORIA DE USUARIO - TOP 5-->
+<!-- SECCIÓN: PRIMERA HISTORIA DE USUARIO - TOP 5-->
     <section class="container background">
-      <div id="bienvenida">
+      <div class="bienvenida">
         <h2>Conoce los 5 Mejores Campeones</h2>
-        <p>¡Y empieza tu viaje por la Ruta del Invocador!</p>
+        <p class='description-text'>¡Y empieza tu viaje por la Ruta del Invocador!</p>
       </div>
       <section id="top-cinco">
         <div class ="container justify-content" id="descripion-de-los-top-5">
         </div>
       </section>
     </section>    
-<!-- TUTORIAL -->
+<!-- Tutorial -->
         <p class= 'end'>Aprende a leer estadisticas Lol en 20 segundos</p>
       <iframe width="300" height="250" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
-<!-- OPCIÓN QUE PERMITE IR A LOS TIPOS DE ROL -->
+<!-- Botón para conocer todos los roles: lleva a segunda historia -->
       <div>
         <button id="todos-los-campeones" type="button">Conoce todos los campeones</button>
       </div>
 </div>
 
-<!-- ESTE SECTION MUESTRA LA SEGUNDA HISTORIA DE USUARIO - ROLES-->
-<section id='segunda-pantalla' class='body'>
-    <h1 id="roles-titulo">Roles en el juego</h1>
-    <div id='todos-los-roles'></div>
+<!-- SECCIÓN: SEGUNDA HISTORIA DE USUARIO - ROLES-->
+<section id='segunda-pantalla' class='container'>
+  <div class="bienvenida">
+      <h1 id="roles-titulo">Be an Expert in Champeon Roles </h1>
+      <p class='description-text'>Get to know all the champions by role, and take game advantage in the Summoner's route</p>
+  </div>
+  <div id='todos-los-roles'></div>
 
 </section>
 <!-- BOTÓN PARA SUBIR AL INICIO -->
