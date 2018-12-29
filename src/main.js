@@ -21,10 +21,10 @@ champions.forEach((top5champions, index) => {
       <p class='titulo-del-campeon'>${ champions[index].title }</p>
       <p class='blurb-del-campeon'>${ champions[index].blurb } </p>
       <div class='niveles-del-campeon'>
-      <label class='icon-gitlab" for="Attack' >Ataque <span>${ champions[index].info.attack }</span></label>
-      <label class='icon-first-order' for='defense'>Defensa <span>${ champions[index].info.defense }</span></label>
-      <label class='icon-magic' for='magic'>Magia <span>${ champions[index].info.magic }</span></label>
-      <label class='icon-flattr'for='dificulty'>Dificultad <span>${ champions[index].info.difficulty }</span></label>
+      <label class='icon-gitlab' for='attack' >Ataque:<span class='nivel-en-numero'>${ champions[index].info.attack }</span></label>
+      <label class='icon-first-order' for='defense'>Defensa:<span class='nivel-en-numero'>${ champions[index].info.defense }</span></label>
+      <label class='icon-magic' for='magic'>Magia:<span class='nivel-en-numero'>${ champions[index].info.magic }</span></label>
+      <label class='icon-flattr'for='dificulty'>Dificultad:<span class='nivel-en-numero'>${ champions[index].info.difficulty }</span></label>
       </div>
       </div>`;
   window.templateListOfCards += card;
@@ -32,6 +32,7 @@ champions.forEach((top5champions, index) => {
 containerList.innerHTML = window.templateListOfCards;
 
 /* FUNCIÓN DE LA SEGUNDA HISTORIA: MOSTRAR LOS ROLES */
+
 
 /* EVENTO EN EL BOTON "Todos los campeones" QUE MUESTRA TODOS LOS ROLES*/
 

@@ -1,6 +1,4 @@
 const createTemplateChampeonsFive = (array) => {
-  // console.log('Esto es' + array);
-  
   let newChampionArray = Object.values(array);
   const champions = newChampionArray.reduce(function(result, champion) {
     if (champion.top === 'top5') {

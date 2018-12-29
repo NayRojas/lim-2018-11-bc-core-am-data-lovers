@@ -196,12 +196,16 @@ header label{
 .niveles-del-campeon{
   font-family: 'Lato', sans-serif;
   font-size: 11px;
-  color: rgb(15, 12, 6);
+  color: rgb(51, 51, 51);
   padding: 5px; 
-  margin: 6px;
+  margin: 2px;
   padding-bottom: 15px;
 }
 
+label .nivel-en-numero{
+  font-weight: bolder;
+  color: rgb(17, 17, 17);
+}
 .rol-del-campeon{
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 20px;
@@ -211,7 +215,7 @@ header label{
 
 .elemento{
   flex-basis: 200px;
-  height: 415px;
+  max-height: 420px;
   display: block;
   margin: 10px;
   text-align: center;
@@ -274,14 +278,14 @@ iframe{
 /************ESTILO DE SEGUNDA HISTORIA: CARD DE ROLES*****************/
 .elemento-to-roles{
   flex-basis: 200px;
-  height: 427px;
+  height: 430px;
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   border: 5px double rgb(238, 198, 98);
 }
 
 .img-ppl-role{
-  max-height: 417px;
+  max-height: 410px;
 }
 
 #roles-titulo{
