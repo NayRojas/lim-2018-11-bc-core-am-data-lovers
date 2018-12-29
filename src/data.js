@@ -9,19 +9,26 @@ const createTemplateChampeonsFive = (array) => {
   return champions;
 };
 
+// const createCardsRoles = (array2) => {
+// const newArray = Object.assign(entriesOfChampeons.map(currentChampeon => currentChampeon[1]).filter(currentChampeon => currentChampeon.top === 'top5'));
 
-const createCardsRoles = (array2) => {
-  let newRoleArray = Object.values(array2);
- /* const rolesOfChampeons = newRoleArray.reduce(function(result, role) {
-    if (LOL.tag === 'tank') {
-      let result = '';
-      result += 1;
+
+const createNumbersOfRoles = (array2) => {
+  let arrayOfRoles = Object.values(array2);
+  const rolesOfChampions = arrayOfRoles.reduce(function(resultTanks, role) {
+    if (role.tag === 'tank') {
+      resultTanks.push(role);
+      let cuantosTanques = resultTanks.length;
+      console.log(cuantosTanques);
     }
+    return role;
   });
-  return rolesOfChampeons;*/
+  return rolesOfChampions;
 };
+
+console.log(createNumbersOfRoles(window.LOL.data));
 
 window.lol = {
   getFiveChampeons: createTemplateChampeonsFive,
-  getRoles: createCardsRoles,
+  getRoles: createNumbersOfRoles,
 };
