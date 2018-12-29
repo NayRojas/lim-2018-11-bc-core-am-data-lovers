@@ -6,6 +6,7 @@ const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
 const containerRoles = document.getElementById('todos-los-roles');
 const goToHome = document.getElementById('home');
 const goToRoles = document.getElementById('ir-a-roles');
+const goToTutorial = document.getElementById('ir-a-tutorial');
 
 const roles = [
   {img: 'img/asesino.jpeg', name: 'Asesino'},
@@ -66,5 +67,13 @@ goToHome.addEventListener('click', () => {
 goToRoles.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
-  document.getElementById('menu-bar').style.transform = translateX(-100%);
+  document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
 });
+
+/* MENU: Boton para ir a el tutorial*/
+goToTutorial.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'block'; 
+  document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+});
+

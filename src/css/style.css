@@ -85,7 +85,7 @@ header label{
   background: rgba(255,255,255, 0.3);
 }
 
-#menu-bar:checked ~ .menu{
+#menu-bar:hover ~ .menu{
   transform: translateX(0%);
 }
 
@@ -289,7 +289,7 @@ iframe{
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 28px;
   color:rgb(241, 175, 112);
-  margin:100px auto 20px auto;
+  margin:80px auto 10px auto;
 }
 
 #scrollToTop {
