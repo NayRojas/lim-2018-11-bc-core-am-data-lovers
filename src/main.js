@@ -1,16 +1,31 @@
+/* Estas declaraciones manipulan el estado inicial de las pantallas ante el DOM*/
 document.getElementById('primera-pantalla').style.display = 'block';
 document.getElementById('segunda-pantalla').style.display = 'none';
 document.getElementById('tercera-pantalla').style.display = 'none';
+document.getElementById('cuarta-pantalla').style.display = 'none';
 
+/* Variables para la manipulación de botones y elementos*/
 const containerList = document.getElementById('descripion-de-los-top-5');
 const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
 const containerRoles = document.getElementById('todos-los-roles');
+const containerChampionsByRole = document.getElementById('todos-los-campeones-por-rol');
+// const containerFullChampions = document.getElementById('card-avatar');
 const goToHome = document.getElementById('home');
 const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
 const goToTutorial = document.getElementById('ir-a-tutorial');
 
-/* FUNCIÓN DE LA PRIMERA HISTORIA: MOSTRAR 5 CAMPEONES */
+/* Esta constante almacena los datos de las imagenes de los roles a mostrar en la segunda función*/
+const roles = [
+  {img: 'img/asesino.jpeg', name: 'assassin'}, // Asesino
+  {img: 'img/tank.jpeg', name: 'tank'}, // Tanque
+  {img: 'img/mago.jpeg', name: 'jungler'}, // 
+  {img: 'img/soporte.jpeg', name: 'support'}, // Soporte
+  {img: 'img/tirador.jpeg', name: 'marksman'}, // tirador
+  {img: 'img/fighter.jpeg', name: 'fighter'}, // Tanque
+];
+
+/* 1. Esta función muestra los cinco campeones en cards*/
 const champions = lol.getFiveChampeons(window.LOL.data);
 champions.forEach((top5champions, index) => {
   // console.log(champions[index].info)
@@ -31,23 +46,10 @@ champions.forEach((top5champions, index) => {
   window.templateListOfCards += card;
 });
 containerList.innerHTML = window.templateListOfCards;
-
-/* SEGUNDA HISTORIA: Mostrar todos los roles */
-/* Evento que crea el card para cada rol*/
-const roles = [
-  {img: 'img/asesino.jpeg', name: 'assassin'},
-  {img: 'img/tank.jpeg', name: 'tank'},
-  {img: 'img/mago.jpeg', name: 'marksman  '},
-  {img: 'img/soporte.jpeg', name: 'support'},
-  {img: 'img/tirador.jpeg', name: 'jungker'},
-  {img: 'img/fighter.jpeg', name: 'fighter'},
-];
-
-buttonToRoleOfChampeons.addEventListener('click', () => {
-  document.getElementById('primera-pantalla').style.display = 'none'; 
-  document.getElementById('segunda-pantalla').style.display = 'block';
-  document.getElementById('tercera-pantalla').style.display = 'none'; 
+/* 2. Este función muestra los seis roles del juego en cards*/
+const showRoles = () => {
   roles.forEach((allRoles, index2) => {
+    /* Aqui se crea la plantilla literal*/
     const roleCard = `
       <div class='card-role elemento elemento-to-roles'>
         <img class='img-principal img-ppl-role' id='${ roles[index2].name }' src= '${ roles[index2].img }' alt='${ roles[index2].name }'/>
@@ -56,16 +58,84 @@ buttonToRoleOfChampeons.addEventListener('click', () => {
     window.templateListOfRoles += roleCard;
   });
   containerRoles.innerHTML = window.templateListOfRoles;
-});
+  selectingChampionsByRoles();
+};
+/* 3. Este función muestra pequeños cards de los campeones al hacer click en los diferentes roles */
+const showingChampionsByRole = (array) => {
+  array.forEach((allRoles, index3) => {
+  /* Aqui se crea la plantilla literal*/
+    const championInRole = `
+  <div id='card-avatar' class='tarjeta-del-campeon elemento-avatar'>
+      <img class='avatar'src='${ array[index3].img }'/>
+      <p class='nombre-del-campeon'>${ array[index3].name }</p>
+      <p class='titulo-del-campeon'>${ array[index3].title }</p>
+      <p class='vida-del-campeon'>${ array[index3].stats } </p>
+  </div>`;
+    window.templateListOfChampionsByRole += championInRole;
+  });
+  containerChampionsByRole.innerHTML = window.templateListOfChampionsByRole;
+};
 
+
+/* Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
+const selectingChampionsByRoles = () => {
+  const assassin = document.getElementById('assassin');
+  assassin.addEventListener('click', () => {
+    showThridScreen();
+    let assassin = lol.getRoles(window.LOL.data, 'Assassin');
+    showingChampionsByRole(assassin);
+    console.log(assassin);
+  });
+  const tank = document.getElementById('tank');
+  tank.addEventListener('click', () => {
+    showThridScreen();
+    let tank = lol.getRoles(window.LOL.data, 'Tank');
+    showingChampionsByRole(tank);
+    console.log(tank);
+  });
+  const jungler = document.getElementById('jungler');
+  jungler.addEventListener('click', () => {
+    showThridScreen();
+    let jungler = lol.getRoles(window.LOL.data, 'Mage');
+    showingChampionsByRole(jungler);
+    console.log(jungler);
+  });
+  const support = document.getElementById('support');
+  support.addEventListener('click', () => {
+    showThridScreen();
+    let support = lol.getRoles(window.LOL.data, 'Support');
+    showingChampionsByRole(support);
+    console.log(support);
+  });
+  const marksman = document.getElementById('marksman');
+  marksman.addEventListener('click', () => {
+    showThridScreen();
+    let marksman = lol.getRoles(window.LOL.data, 'Mage');
+    showingChampionsByRole(marksman);
+    console.log(marksman);
+  });
+  const fighter = document.getElementById('fighter');
+  fighter.addEventListener('click', () => {
+    showThridScreen();
+    let fighter = lol.getRoles(window.LOL.data, 'Fighter');
+    showingChampionsByRole(fighter);
+    console.log(fighter);
+  });
+};
+/* Evento para mostrar los roles en el botón "conoce todos los campeones*/
+buttonToRoleOfChampeons.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'block';
+  document.getElementById('tercera-pantalla').style.display = 'none'; 
+  showRoles();
+});
+/* Función para ocultar la primera y segunda pantallas*/
 const showThridScreen = () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'block';
 };
-
-
-/* HEADER: Boton para volver al inicio*/
+/* HEADER: Evento en el logo para volver al inicio*/
 goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
@@ -81,7 +151,7 @@ goToRoles.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
-  window.getFiveChampeons();
+  showRoles();
 });
 /* MENU: Boton para ir a el tutorial*/
 goToTutorial.addEventListener('click', () => {

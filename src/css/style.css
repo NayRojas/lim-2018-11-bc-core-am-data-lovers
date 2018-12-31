@@ -313,6 +313,20 @@ iframe{
   border-color: #664100
 }
 
+/*
+ESTILOS DE LA TERCERA HISTORIA
+.elemento-avatar{
+  flex-basis: 100px;
+  max-height: 420px;
+  display: block;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+  border: 5px double rgb(185, 185, 185);
+  border-radius: 3px;
+  background-color: rgba(248, 224, 196, 0.9);
+}
+*/
 /************ESTILO DEL FOOTER*****************/
 footer {
   display: flex;
