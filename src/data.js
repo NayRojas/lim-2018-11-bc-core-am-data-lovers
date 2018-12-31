@@ -9,19 +9,31 @@ const createTemplateChampeonsFive = (array) => {
   return champions;
 };
 
+
+const createNumbersOfRoles = (array2, role) => {
+  let mapChampionsPerRole = [];
+  let arrayOfRoles = Object.values(array2)
+  arrayOfRoles.filter(function(val) {
+    val.tags.map((currentRole) => {
+      if (currentRole === role ) {
+        mapChampionsPerRole.push(val);
+      }
+    });
+  }, []);
+  return mapChampionsPerRole;
+};
+
 // const createCardsRoles = (array2) => {
 // const newArray = Object.assign(entriesOfChampeons.map(currentChampeon => currentChampeon[1]).filter(currentChampeon => currentChampeon.top === 'top5'));
-
-
-// const createNumbersOfRoles = (array2) => {
-let arrayOfRoles = Object.entries(window.LOL.data).map(currentRole => currentRole[1]).filter(currentRole => currentRole.name === 'Soraka');
-arrayOfRoles.reduce(function(resultTanks, role) {
+/*arrayOfRoles.reduce(function(resultTanks, role) {
   resultTanks.push(role);
 });
-console.log('este es ' + arrayOfRoles);
-   //  let arrayOfRoles = Object.values(array2);
-    // console.log('este es '+ arrayOfRoles);
-/*  const rolesOfChampions = arrayOfRoles.reduce(function(resultTanks, role) {
+console.log('este es ' + arrayOfRoles);*/
+
+/*const createNumbersOfRoles = (array2) => {
+  let arrayOfRoles = Object.values(array2);
+  console.log(arrayOfRoles);
+  const rolesOfChampions = arrayOfRoles.reduce(function(resultTanks, role) {
     if (role.tags === 'Tank') {
       resultTanks.push(role);
     }
@@ -35,5 +47,5 @@ console.log(createNumbersOfRoles(window.LOL.data));*/
 
 window.lol = {
   getFiveChampeons: createTemplateChampeonsFive,
-  // getRoles: createNumbersOfRoles,
+  getRoles: createNumbersOfRoles,
 };

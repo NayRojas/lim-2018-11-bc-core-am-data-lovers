@@ -1,5 +1,6 @@
 document.getElementById('primera-pantalla').style.display = 'block';
 document.getElementById('segunda-pantalla').style.display = 'none';
+document.getElementById('tercera-pantalla').style.display = 'none';
 
 const containerList = document.getElementById('descripion-de-los-top-5');
 const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
@@ -31,33 +32,37 @@ champions.forEach((top5champions, index) => {
 });
 containerList.innerHTML = window.templateListOfCards;
 
-/* FUNCIÓN DE LA SEGUNDA HISTORIA: MOSTRAR LOS ROLES */
-
-
-/* EVENTO EN EL BOTON "Todos los campeones" QUE MUESTRA TODOS LOS ROLES*/
-
+/* SEGUNDA HISTORIA: Mostrar todos los roles */
+/* Evento que crea el card para cada rol*/
 const roles = [
-  {img: 'img/asesino.jpeg', name: 'Asesino'},
-  {img: 'img/tank.jpeg', name: 'Tanque'},
-  {img: 'img/mago.jpeg', name: 'Mago'},
-  {img: 'img/soporte.jpeg', name: 'Soporte'},
-  {img: 'img/tirador.jpeg', name: 'Tirador'},
-  {img: 'img/fighter.jpeg', name: 'Luchador'},
+  {img: 'img/asesino.jpeg', name: 'assassin'},
+  {img: 'img/tank.jpeg', name: 'tank'},
+  {img: 'img/mago.jpeg', name: 'marksman  '},
+  {img: 'img/soporte.jpeg', name: 'support'},
+  {img: 'img/tirador.jpeg', name: 'jungker'},
+  {img: 'img/fighter.jpeg', name: 'fighter'},
 ];
 
 buttonToRoleOfChampeons.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
+  document.getElementById('tercera-pantalla').style.display = 'none'; 
   roles.forEach((allRoles, index2) => {
     const roleCard = `
       <div class='card-role elemento elemento-to-roles'>
-        <img class='img-principal img-ppl-role' src= '${ roles[index2].img }' alt='${ roles[index2].name }'/>
+        <img class='img-principal img-ppl-role' id='${ roles[index2].name }' src= '${ roles[index2].img }' alt='${ roles[index2].name }'/>
         <p class= 'cantidad-de-campeones'></p>
       </div>`;
     window.templateListOfRoles += roleCard;
   });
   containerRoles.innerHTML = window.templateListOfRoles;
 });
+
+const showThridScreen = () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('tercera-pantalla').style.display = 'block';
+};
 
 
 /* HEADER: Boton para volver al inicio*/
