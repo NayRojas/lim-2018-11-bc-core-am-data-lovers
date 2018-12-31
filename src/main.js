@@ -65,21 +65,19 @@ goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
 });
-
 /* MENU: Boton para ir a home*/
 goToHome2.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block'; 
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
 });
-
 /* MENU: Boton para ir a roles*/
 goToRoles.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+  window.getFiveChampeons();
 });
-
 /* MENU: Boton para ir a el tutorial*/
 goToTutorial.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block'; 
