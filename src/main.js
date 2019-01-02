@@ -7,9 +7,10 @@ document.getElementById('cuarta-pantalla').style.display = 'none';
 /* Variables para la manipulación de botones y elementos*/
 const containerList = document.getElementById('descripion-de-los-top-5');
 const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
+const buttonToRoles = document.getElementById('todos-los-cardroles');
 const containerRoles = document.getElementById('todos-los-roles');
 const containerChampionsByRole = document.getElementById('todos-los-campeones-por-rol');
-// const containerFullChampions = document.getElementById('card-avatar');
+const containerRoleTittle = document.getElementById('titulo-del-rol');
 const goToHome = document.getElementById('home');
 const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
@@ -17,7 +18,7 @@ const goToTutorial = document.getElementById('ir-a-tutorial');
 
 /* Esta constante almacena los datos de las imagenes de los roles a mostrar en la segunda función*/
 const roles = [
-  {img: 'img/asesino.jpeg', name: 'assassin'}, // Asesino
+  {img: 'img/asesino.jpeg', name: 'assassin' }, // Asesino
   {img: 'img/tank.jpeg', name: 'tank'}, // Tanque
   {img: 'img/mago.jpeg', name: 'jungler'}, // 
   {img: 'img/soporte.jpeg', name: 'support'}, // Soporte
@@ -60,17 +61,29 @@ const showRoles = () => {
   containerRoles.innerHTML = window.templateListOfRoles;
   selectingChampionsByRoles();
 };
+/* const createTitle = (roles) => {
+  const roleTittle = `
+  <h1 class="roles-titulo">${ roles.name }</h1>
+  `;
+  window.templateTittleRole += roleTittle;
+  containerRoleTittle.innerHTML = window.templateTittleRole;
+}; */
 /* 3. Este función muestra pequeños cards de los campeones al hacer click en los diferentes roles */
 const showingChampionsByRole = (array) => {
   array.forEach((allRoles, index3) => {
   /* Aqui se crea la plantilla literal*/
     const championInRole = `
   <div id='card-avatar' class='tarjeta-del-campeon elemento-avatar'>
-      <img class='avatar'src='${ array[index3].img }'/>
-      <p class='nombre-del-campeon'>${ array[index3].name }</p>
-      <p class='titulo-del-campeon'>${ array[index3].title }</p>
-      <p class='vida-del-campeon'>${ array[index3].stats } </p>
+      <div class= 'avatar-div'>
+        <img class='avatar'src='${ array[index3].img }'/>
+      </div>
+      <div class= 'text-div'>
+        <p class='nombre-del-campeon nombre-en-rol'>${ array[index3].name }</p>
+        <p class='titulo-del-campeon titulo-en-rol'>${ array[index3].title }</p>
+        <!--<p class='vida-del-campeon'>${ array[index3].stats[1] } </p>-->
+      </div>
   </div>`;
+    
     window.templateListOfChampionsByRole += championInRole;
   });
   containerChampionsByRole.innerHTML = window.templateListOfChampionsByRole;
@@ -84,6 +97,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let assassin = lol.getRoles(window.LOL.data, 'Assassin');
     showingChampionsByRole(assassin);
+    //createTitle();
     console.log(assassin);
   });
   const tank = document.getElementById('tank');
@@ -91,6 +105,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let tank = lol.getRoles(window.LOL.data, 'Tank');
     showingChampionsByRole(tank);
+    //createTitle();
     console.log(tank);
   });
   const jungler = document.getElementById('jungler');
@@ -98,6 +113,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let jungler = lol.getRoles(window.LOL.data, 'Mage');
     showingChampionsByRole(jungler);
+    //createTitle();
     console.log(jungler);
   });
   const support = document.getElementById('support');
@@ -105,6 +121,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let support = lol.getRoles(window.LOL.data, 'Support');
     showingChampionsByRole(support);
+    //createTitle();
     console.log(support);
   });
   const marksman = document.getElementById('marksman');
@@ -112,6 +129,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let marksman = lol.getRoles(window.LOL.data, 'Mage');
     showingChampionsByRole(marksman);
+    //createTitle();
     console.log(marksman);
   });
   const fighter = document.getElementById('fighter');
@@ -119,6 +137,7 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let fighter = lol.getRoles(window.LOL.data, 'Fighter');
     showingChampionsByRole(fighter);
+    //createTitle();
     console.log(fighter);
   });
 };
@@ -158,5 +177,12 @@ goToTutorial.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block'; 
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+});
+/* Evento para regresar a todos los roles en el botón "Roles in the game*/
+buttonToRoles.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'block';
+  document.getElementById('tercera-pantalla').style.display = 'none';
+  document.getElementById('cuarta-pantalla').style.display = 'none';
 });
 

@@ -53,10 +53,10 @@
     </section>    
 <!-- Tutorial -->
         <p class= 'end'>Aprende a leer estadisticas Lol en 20 segundos</p>
-      <iframe id="tutorial" width="300" height="250" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+        <iframe id="tutorial" width="300" height="250" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
 <!-- Botón para conocer todos los roles: lleva a segunda historia -->
       <div>
-        <button id="todos-los-campeones" type="button">Conoce todos los campeones</button>
+        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Conoce todos los campeones</button>
       </div>
 </div>
 
@@ -71,10 +71,13 @@
 
 <!-- SECCIÓN: TERCERA HISTORIA DE USUARIO - ROLES-->
 <section id='tercera-pantalla' class='container'> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
-  <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-      <h1 class="roles-titulo">Be an Expert in Champeon Roles </h1>
+  <div id="titulo-del-rol" class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
+    <h1 class="roles-titulo">Be An Expert in Champions</h1>
   </div>
   <div id='todos-los-campeones-por-rol'></div>
+  <div>
+    <button id="todos-los-cardroles" class="todos-los-campeones">Roles in the Game</button>
+  </div>
 </section>
 
 <!-- SECCIÓN: CUARTA HISTORIA DE USUARIO - ROLES-->
@@ -82,7 +85,7 @@
   <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
       <h1 class="roles-titulo">Champions</h1>
   </div>
-  <div id='campeon'></div>
+  <div class="todos-los-campeones"></div>
 </section>
 
 <!-- BOTÓN PARA SUBIR AL INICIO -->
