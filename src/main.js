@@ -6,11 +6,10 @@ document.getElementById('cuarta-pantalla').style.display = 'none';
 
 /* Variables para la manipulación de botones y elementos*/
 const containerList = document.getElementById('descripion-de-los-top-5');
-const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones');
-const buttonToRoles = document.getElementById('todos-los-cardroles');
+const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones'); // Primer botón
+const buttonToRoles = document.getElementById('todos-los-cardroles'); // Botón para volver a los cards
 const containerRoles = document.getElementById('todos-los-roles');
 const containerChampionsByRole = document.getElementById('todos-los-campeones-por-rol');
-const containerRoleTittle = document.getElementById('titulo-del-rol');
 const goToHome = document.getElementById('home');
 const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
@@ -61,13 +60,6 @@ const showRoles = () => {
   containerRoles.innerHTML = window.templateListOfRoles;
   selectingChampionsByRoles();
 };
-/* const createTitle = (roles) => {
-  const roleTittle = `
-  <h1 class="roles-titulo">${ roles.name }</h1>
-  `;
-  window.templateTittleRole += roleTittle;
-  containerRoleTittle.innerHTML = window.templateTittleRole;
-}; */
 /* 3. Este función muestra pequeños cards de los campeones al hacer click en los diferentes roles */
 const showingChampionsByRole = (array) => {
   array.forEach((allRoles, index3) => {
@@ -88,8 +80,6 @@ const showingChampionsByRole = (array) => {
   });
   containerChampionsByRole.innerHTML = window.templateListOfChampionsByRole;
 };
-
-
 /* Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
 const selectingChampionsByRoles = () => {
   const assassin = document.getElementById('assassin');
@@ -97,48 +87,44 @@ const selectingChampionsByRoles = () => {
     showThridScreen();
     let assassin = lol.getRoles(window.LOL.data, 'Assassin');
     showingChampionsByRole(assassin);
-    //createTitle();
-    console.log(assassin);
+    // let names = Object.entries(assassin).map(currentChampeon => currentChampeon[1].name);
   });
   const tank = document.getElementById('tank');
   tank.addEventListener('click', () => {
     showThridScreen();
     let tank = lol.getRoles(window.LOL.data, 'Tank');
-    showingChampionsByRole(tank);
-    //createTitle();
-    console.log(tank);
+    let tankOrdered = lol.getOrderChampions(tank).sort();
+    console.log(tankOrdered);
+    //showingChampionsByRole(tankOrdered);
+    
   });
   const jungler = document.getElementById('jungler');
   jungler.addEventListener('click', () => {
     showThridScreen();
     let jungler = lol.getRoles(window.LOL.data, 'Mage');
     showingChampionsByRole(jungler);
-    //createTitle();
-    console.log(jungler);
+    // createTitle();
   });
   const support = document.getElementById('support');
   support.addEventListener('click', () => {
     showThridScreen();
     let support = lol.getRoles(window.LOL.data, 'Support');
     showingChampionsByRole(support);
-    //createTitle();
-    console.log(support);
+    // createTitle();
   });
   const marksman = document.getElementById('marksman');
   marksman.addEventListener('click', () => {
     showThridScreen();
     let marksman = lol.getRoles(window.LOL.data, 'Mage');
     showingChampionsByRole(marksman);
-    //createTitle();
-    console.log(marksman);
+    // createTitle();
   });
   const fighter = document.getElementById('fighter');
   fighter.addEventListener('click', () => {
     showThridScreen();
     let fighter = lol.getRoles(window.LOL.data, 'Fighter');
     showingChampionsByRole(fighter);
-    //createTitle();
-    console.log(fighter);
+    // createTitle();
   });
 };
 /* Evento para mostrar los roles en el botón "conoce todos los campeones*/
@@ -158,6 +144,7 @@ const showThridScreen = () => {
 goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('tercera-pantalla').style.display = 'none';
 });
 /* MENU: Boton para ir a home*/
 goToHome2.addEventListener('click', () => {

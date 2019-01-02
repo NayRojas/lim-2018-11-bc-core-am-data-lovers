@@ -319,7 +319,7 @@ iframe{
   flex-wrap: wrap;
   width: 250px;
   height: 70px;
-  margin: 10px;
+  margin: 5px 10px 5px 10px;
   text-align: center;
   align-content: center;
   border: 5px double rgb(238, 198, 98);
