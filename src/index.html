@@ -56,7 +56,7 @@
         <iframe id="tutorial" width="300" height="250" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
 <!-- Botón para conocer todos los roles: lleva a segunda historia -->
       <div>
-        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Conoce todos los campeones</button>
+        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Go to Roles</button>
       </div>
 </div>
 
@@ -72,11 +72,17 @@
 <!-- SECCIÓN: TERCERA HISTORIA DE USUARIO - ROLES-->
 <section id="tercera-pantalla" class="container"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
   <div id="titulo-del-rol" class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-    <h1 class="roles-titulo">Be An Expert in Champions</h1>
+    <h1 id= "titulo" class="roles-titulo upperstyle"></h1>
+    <p id="numero-de-campeones" class="description-text"></p>
+    <p id="description-del-rol" class="description-text"></p>
+  </div>    
+  <div id="botones-para-ordenar">
+    <button class="todos-los-campeones botónPequeño" id="ordenar-ascendente">Order by A-Z</button>
+    <button class="todos-los-campeones botónPequeño" id="ordenar-descendente">Order by Z-A</button>
   </div>
   <div id="todos-los-campeones-por-rol"></div>
   <div>
-    <button id="todos-los-cardroles" class="todos-los-campeones">Roles in the Game</button>
+    <button id="todos-los-cardroles" class="todos-los-campeones marginTop">Roles in the Game</button>
   </div>
 </section>
 

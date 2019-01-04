@@ -1,4 +1,4 @@
-const createTemplateChampeonsFive = (array) => {
+const selectFiveChampions = (array) => {
   let newChampionArray = Object.values(array);
   const champions = newChampionArray.reduce(function(result, champion) {
     if (champion.top === 'top5') {
@@ -9,15 +9,15 @@ const createTemplateChampeonsFive = (array) => {
   return champions;
 };
 
-let mapChampionsPerRole = [];
-const createNumbersOfRoles = (array2, role) => {
+const createNumbersOfRoles = (data, role) => {
+  let mapChampionsPerRole = [];
   /* if (array2 === '') {
     console.log('esta en blanco el arreglo');
   }
   if (role === '') {
     console.log('Rol esta en blanco');
   } */
-  let arrayOfRoles = Object.values(array2);
+  let arrayOfRoles = Object.values(data);
   arrayOfRoles.filter(function(val) {
     val.tags.map((currentRole) => {
       if (currentRole === role) {
@@ -28,20 +28,26 @@ const createNumbersOfRoles = (array2, role) => {
   return mapChampionsPerRole;
 };
 
-const order = (array) => {
-  array.sort((a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } 
-    if (a.name < b.name) {
-      return -1;
-    } 
-    return 0;
+const sorting = (data, sortBy, sortOrder) => {
+  if (sortOrder === '') {
+    sortOrder = 1;
+  } else {
+    if (sortOrder === 'Desc') {
+      sortOrder = -1;
+    }
+  }
+  const order = data.sort(function(propertyA, propertyB) {
+    if (sortOrder === -1) {
+      return propertyB[sortBy].localeCompare(propertyA[sortBy]);
+    } else {
+      return propertyA[sortBy].localeCompare(propertyB[sortBy]);
+    }        
   });
+  return order;
 };
 
 window.lol = {
-  getFiveChampeons: createTemplateChampeonsFive,
-  getRoles: createNumbersOfRoles,
-  getOrderChampions: order
+  getFiveChampeons: selectFiveChampions,
+  filterData: createNumbersOfRoles,
+  sortData: sorting
 };

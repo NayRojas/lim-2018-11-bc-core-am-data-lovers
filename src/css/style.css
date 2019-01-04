@@ -234,7 +234,7 @@ label .nivel-en-numero{
 
 div .todos-los-campeones{
   display: block;
-  margin: auto;
+  margin: auto auto auto auto;
   align-content: center;
 }
 
@@ -249,6 +249,7 @@ div .todos-los-campeones{
   font-size: 18px;
   font-weight: 600;
   padding: 10px 10px 10px 10px;
+  margin: auto;
   text-decoration: none;
   display: block;
 }
@@ -346,7 +347,7 @@ iframe{
   height: 58px;
 }
 
-div .nombre-en-rol{
+div .nombre-en-rol{ 
   font-size: 25px;
   margin: 0px;
 }
@@ -355,14 +356,47 @@ div .nombre-en-rol{
   font-size: 15px;
 }
 
+div #card-avatar{
+  margin: 10px auto 10px auto;
+}
+
 #todos-los-campeones-por-rol{
+  height: 50;
+  width: 300;
   display: block;
   margin: auto;
 }
 
+.upperstyle{
+  font-size: 45px;
+  font-variant-caps: all-small-caps;
+  margin:50px auto 5px auto;
+  letter-spacing: 3px;
+}
 
+#botones-para-ordenar{
+  display: flex;
+  margin: 5px auto 5px auto;
+  width: 220px;
+  height: 50px;
+  align-content: center;
+}
 
+.botónPequeño{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 5px 5px 5px;
+  float: right;
+  margin-top: 10px;
+}
 
+#numero-de-campeones{
+  border-top: 0.5px solid rgb(109, 109, 109);
+  padding-top:10px;
+  font-size: 17px;
+  font-weight: bolder;
+  font-kerning: normal;
+}
 /************ESTILO DEL FOOTER*****************/
 footer {
   display: flex;

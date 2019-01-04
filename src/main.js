@@ -10,6 +10,8 @@ const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones'); 
 const buttonToRoles = document.getElementById('todos-los-cardroles'); // Botón para volver a los cards
 const containerRoles = document.getElementById('todos-los-roles');
 const containerChampionsByRole = document.getElementById('todos-los-campeones-por-rol');
+const buttonToAscendentOrden = document.getElementById('ordenar-ascendente');
+const buttonToDescendentOrden = document.getElementById('ordenar-descendente');
 const goToHome = document.getElementById('home');
 const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
@@ -24,7 +26,7 @@ const roles = [
   {img: 'img/tirador.jpeg', name: 'marksman'}, // tirador
   {img: 'img/fighter.jpeg', name: 'fighter'}, // Tanque
 ];
-
+/* FUNCIONES */
 /* 1. Esta función muestra los cinco campeones en cards*/
 const champions = lol.getFiveChampeons(window.LOL.data);
 champions.forEach((top5champions, index) => {
@@ -72,59 +74,88 @@ const showingChampionsByRole = (array) => {
       <div class= 'text-div'>
         <p class='nombre-del-campeon nombre-en-rol'>${ array[index3].name }</p>
         <p class='titulo-del-campeon titulo-en-rol'>${ array[index3].title }</p>
-        <!--<p class='vida-del-campeon'>${ array[index3].stats[1] } </p>-->
       </div>
   </div>`;
     
     window.templateListOfChampionsByRole += championInRole;
   });
   containerChampionsByRole.innerHTML = window.templateListOfChampionsByRole;
+
+  /* Evento para ordenar data de la A a la Z y viceversa */
+  buttonToAscendentOrden.addEventListener('click', () => {
+    let championsAToZ = lol.sortData(array, 'name', '');
+    window.templateListOfChampionsByRole = '';
+    containerChampionsByRole.innerHTML = '';
+    showingChampionsByRole(championsAToZ);
+  });
+  buttonToDescendentOrden.addEventListener('click', () => {
+    let championsZToA = lol.sortData(array, 'name', 'Desc');
+    window.templateListOfChampionsByRole = '';
+    containerChampionsByRole.innerHTML = '';
+    showingChampionsByRole(championsZToA);
+  });
 };
-/* Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
+/* 4. Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
 const selectingChampionsByRoles = () => {
   const assassin = document.getElementById('assassin');
   assassin.addEventListener('click', () => {
     showThridScreen();
-    let assassin = lol.getRoles(window.LOL.data, 'Assassin');
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'Assassin';
+    document.getElementById('description-del-rol').innerHTML = 'Assassins specialize in infiltrating enemy lines with their unrivaled mobility to quickly dispatch high-priority targets.';
+    let assassin = lol.filterData(window.LOL.data, 'Assassin');
+    document.getElementById('numero-de-campeones').innerHTML = assassin.length + '  CHAMPIONS';
     showingChampionsByRole(assassin);
-    // let names = Object.entries(assassin).map(currentChampeon => currentChampeon[1].name);
   });
   const tank = document.getElementById('tank');
   tank.addEventListener('click', () => {
     showThridScreen();
-    let tank = lol.getRoles(window.LOL.data, 'Tank');
-    let tankOrdered = lol.getOrderChampions(tank).sort();
-    console.log(tankOrdered);
-    //showingChampionsByRole(tankOrdered);
-    
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'Tank';
+    document.getElementById('description-del-rol').innerHTML = 'Tanks are tough melee champions who sacrifice damage in exchange for powerful crowd control.';
+    let tank = lol.filterData(window.LOL.data, 'Tank');
+    document.getElementById('numero-de-campeones').innerHTML = tank.length + '  CHAMPIONS';
+    showingChampionsByRole(tank);
   });
   const jungler = document.getElementById('jungler');
   jungler.addEventListener('click', () => {
     showThridScreen();
-    let jungler = lol.getRoles(window.LOL.data, 'Mage');
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'Mage';
+    document.getElementById('description-del-rol').innerHTML = 'Mages are champions who typically possess great reach, ability-based area of effect damage and crowd control, and who use all of these strengths in tandem with each other to trap and destroy enemies from a distance.';
+    let jungler = lol.filterData(window.LOL.data, 'Mage');
+    document.getElementById('numero-de-campeones').innerHTML = jungler.length + '  CHAMPIONS';
     showingChampionsByRole(jungler);
-    // createTitle();
   });
   const support = document.getElementById('support');
   support.addEventListener('click', () => {
     showThridScreen();
-    let support = lol.getRoles(window.LOL.data, 'Support');
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'Support';
+    document.getElementById('description-del-rol').innerHTML = 'The function of Support is to strengthen your allies through bonuses and healing, or to disturb enemy lines through mass control.';
+    let support = lol.filterData(window.LOL.data, 'Support');
+    document.getElementById('numero-de-campeones').innerHTML = support.length + '  CHAMPIONS';
     showingChampionsByRole(support);
-    // createTitle();
   });
   const marksman = document.getElementById('marksman');
   marksman.addEventListener('click', () => {
     showThridScreen();
-    let marksman = lol.getRoles(window.LOL.data, 'Mage');
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'marksman';
+    document.getElementById('description-del-rol').innerHTML = 'Marksmen are ranged champions whose power almost exclusively revolves around their basic attacks';
+    let marksman = lol.filterData(window.LOL.data, 'marksman');
+    document.getElementById('numero-de-campeones').innerHTML = marksman.length + '  CHAMPIONS';
     showingChampionsByRole(marksman);
-    // createTitle();
   });
   const fighter = document.getElementById('fighter');
   fighter.addEventListener('click', () => {
     showThridScreen();
-    let fighter = lol.getRoles(window.LOL.data, 'Fighter');
+    cleanValues();
+    document.getElementById('titulo').innerHTML = 'Fighter';
+    document.getElementById('description-del-rol').innerHTML = 'Fighters (also known as Bruisers) are a diverse group of short-ranged combatants who excel at both dealing and surviving damage.';
+    let fighter = lol.filterData(window.LOL.data, 'Fighter');
+    document.getElementById('numero-de-campeones').innerHTML = fighter.length + '  CHAMPIONS';
     showingChampionsByRole(fighter);
-    // createTitle();
   });
 };
 /* Evento para mostrar los roles en el botón "conoce todos los campeones*/
@@ -134,6 +165,7 @@ buttonToRoleOfChampeons.addEventListener('click', () => {
   document.getElementById('tercera-pantalla').style.display = 'none'; 
   showRoles();
 });
+
 /* Función para ocultar la primera y segunda pantallas*/
 const showThridScreen = () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
@@ -145,18 +177,22 @@ goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'none';
+  cleanValues();
 });
 /* MENU: Boton para ir a home*/
 goToHome2.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block'; 
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+  cleanValues();
 });
 /* MENU: Boton para ir a roles*/
 goToRoles.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'block';
+  document.getElementById('tercera-pantalla').style.display = 'none';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+  cleanValues();
   showRoles();
 });
 /* MENU: Boton para ir a el tutorial*/
@@ -171,5 +207,14 @@ buttonToRoles.addEventListener('click', () => {
   document.getElementById('segunda-pantalla').style.display = 'block';
   document.getElementById('tercera-pantalla').style.display = 'none';
   document.getElementById('cuarta-pantalla').style.display = 'none';
+  cleanValues();
+  showRoles();
 });
 
+/* Función que limpia los campos de las demas variables*/
+const cleanValues = () => {
+  window.templateListOfRoles = '';
+  containerChampionsByRole.innerHTML = '';
+  window.templateListOfRoles = '';
+  containerRoles.innerHTML = '';
+};
