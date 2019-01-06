@@ -10,8 +10,10 @@ const buttonToRoleOfChampeons = document.getElementById('todos-los-campeones'); 
 const buttonToRoles = document.getElementById('todos-los-cardroles'); // Botón para volver a los cards
 const containerRoles = document.getElementById('todos-los-roles');
 const containerChampionsByRole = document.getElementById('todos-los-campeones-por-rol');
+const containerChampionsWithMaxLife = document.getElementById('campeones-con-maxima-y-minima-vida');
 const buttonToAscendentOrden = document.getElementById('ordenar-ascendente');
 const buttonToDescendentOrden = document.getElementById('ordenar-descendente');
+const buttonToMaxAndMinLife = document.getElementById('boton-para-mayor-y-menor-vida');
 const goToHome = document.getElementById('home');
 const goToHome2 = document.getElementById('home2');
 const goToRoles = document.getElementById('ir-a-roles');
@@ -95,7 +97,26 @@ const showingChampionsByRole = (array) => {
     showingChampionsByRole(championsZToA);
   });
 };
-/* 4. Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
+/* 6. Esta función crea el template para los campeones con mayor vida*/
+const showingChampionsByMaxLife = (array) => {
+  array.forEach((allChampionsMaxLife, index4) => {
+  /* Aqui se crea la plantilla literal*/
+    const championWithMaxLife = `
+  <div id='card-avatar' class='tarjeta-del-campeon elemento-avatar'>
+      <div class= 'avatar-div'>
+        <img class='avatar'src='${ array[index4].img }'/>
+      </div>
+      <div class= 'text-div'>
+        <p class='nombre-del-campeon nombre-en-rol'>${ array[index4].name }</p>
+        <p class='titulo-del-campeon titulo-en-rol'>${ array[index4].title }</p>
+        
+      </div>
+  </div>`;
+    window.templateWithMaxLife += championWithMaxLife;
+  });
+  containerChampionsWithMaxLife.innerHTML = window.templateWithMaxLife;
+};
+/* 5. Esta función almacena 6 eventos almacenan en cada uno de los card o roles los campeones que tienen este tipo de rol */
 const selectingChampionsByRoles = () => {
   const assassin = document.getElementById('assassin');
   assassin.addEventListener('click', () => {
@@ -116,7 +137,15 @@ const selectingChampionsByRoles = () => {
     let tank = lol.filterData(window.LOL.data, 'Tank');
     document.getElementById('numero-de-campeones').innerHTML = tank.length + '  CHAMPIONS';
     showingChampionsByRole(tank);
+    let maxLifeChampions = lol.computeStats(tank, 'Max'); 
+    console.log(maxLifeChampions);
+    /* Evento para mostrar los campeones con mayor y menor vida por rol*/
+    buttonToMaxAndMinLife.addEventListener('click', () => {
+      showFourthScreen();
+      showingChampionsByMaxLife(maxLifeChampions);
+    });
   });
+    
   const jungler = document.getElementById('jungler');
   jungler.addEventListener('click', () => {
     showThridScreen();
@@ -172,6 +201,12 @@ const showThridScreen = () => {
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'block';
 };
+const showFourthScreen = () => {
+  document.getElementById('primera-pantalla').style.display = 'none';
+  document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('tercera-pantalla').style.display = 'none';
+  document.getElementById('cuarta-pantalla').style.display = 'block';
+};      
 /* HEADER: Evento en el logo para volver al inicio*/
 goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';

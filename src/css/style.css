@@ -397,6 +397,24 @@ div #card-avatar{
   font-weight: bolder;
   font-kerning: normal;
 }
+
+.botongris{
+  background: #c7c6c4;
+  background-image: -webkit-linear-gradient(top, #c7c7c7, #414141);
+  background-image: linear-gradient(to bottom, #c7c7c7, #414141);
+  border: 3px double rgb(146, 146, 146);
+  font-size: 15px;
+  font-weight: bolder;
+  width: 220px;
+  padding: 5px;
+};
+
+#botones-para-mayor-y-menor-vida{
+  display: block;
+  top: 20px;
+  bottom: 20px;
+};
+
 /************ESTILO DEL FOOTER*****************/
 footer {
   display: flex;
@@ -436,6 +454,7 @@ footer img {
 }
 
 footer #redes-en-footer{
+  display: block;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
