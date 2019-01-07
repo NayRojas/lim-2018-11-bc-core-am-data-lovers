@@ -532,6 +532,14 @@ a + a{
   .description-text {
     font-size: 30px;
   }
+  
+  .elemento{
+  height: 900px;
+  height: 500px;
+  display: block;
+  
+  }
+  
 }
 
 @media(min-width: 768px) {
