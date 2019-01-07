@@ -5,7 +5,7 @@ const input = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
     blurb:
       'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox\'s ...',
     info: {
@@ -22,7 +22,7 @@ const input = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
     blurb:
       'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
     info: {
@@ -39,7 +39,7 @@ const input = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Nunu.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg',
     blurb:
       'Sometimes bonds of friendship become stronger than even bonds of blood. When those bonds link a fearless boy to a fearsome Yeti, the bond becomes a force to be reckoned with. Given the responsibility of taming a terrifying beast, Nunu forged a ...',
     info: {
@@ -56,7 +56,7 @@ const input = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg',
     blurb:
       'There once was a Piltovian man named Corin Reveck who had a daughter named Orianna, whom he loved more than anything else in the world. Though Orianna had incredible talent for dancing, she was deeply fascinated by the champions of the League of ...',
     info: {
@@ -75,7 +75,7 @@ const output = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg',
     blurb:
       'Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...',
     info: {
@@ -92,7 +92,7 @@ const output = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Orianna.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Oriana_0.jpg',
     blurb:
       'There once was a Piltovian man named Corin Reveck who had a daughter named Orianna, whom he loved more than anything else in the world. Though Orianna had incredible talent for dancing, she was deeply fascinated by the champions of the League of ...',
     info: {
@@ -116,7 +116,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Cassiopeia.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg',
     blurb:
       'Cassiopeia is a terrifying creature - half woman, half snake - whose slightest glance brings death. The youngest daughter of one of Noxus\' most influential families, she was once a beautiful and cunning temptress capable of manipulating the hardest ...',
     info: {
@@ -160,7 +160,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/KogMaw.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg',
     blurb:
       '\'\'If that\'s just hungry, I don\'t want to see angry.\'\'<br><br>When the prophet Malzahar was reborn in Icathia, he was led there by an ominous voice which thereafter anchored itself to his psyche. From within, this voice bestowed upon him terrible ...',
     info: {
@@ -204,7 +204,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Mordekaiser.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg',
     blurb:
       '\'\'All things must die... and yet I live on.\'\'<br><br>The baleful revenant Mordekaiser is among the most terrifying and hateful spirits haunting the Shadow Isles. He has existed for countless centuries, shielded from true death by necromantic sorcery ...',
     info: {
@@ -292,7 +292,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Sona.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg',
     blurb:
       'Sona has no memories of her true parents. As an infant, she was found abandoned on the doorstep of an Ionian adoption house, nestled atop an ancient instrument in an exquisite case of unknown origins. She was an unusually well-behaved child, always ...',
     info: {
@@ -335,7 +335,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
     blurb:
       'Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox\'s ...',
     info: {
@@ -378,7 +378,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Chogath.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg',
     blurb:
       'There is a place between dimensions, between worlds. To some it is known as the Outside, to others it is the Unknown. To those that truly know, however, it is called the Void. Despite its name, the Void is not an empty place, but rather the home of ...',
     info: {
@@ -421,7 +421,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/FiddleSticks.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg',
     blurb:
       'For nearly twenty years, Fiddlesticks has stood alone in the easternmost summoning chamber of the Institute of War. Only the burning emerald light of his unearthly gaze pierces the musty darkness of his dust-covered home. It is here that the Harbinger ...',
     info: {
@@ -464,7 +464,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Heimerdinger.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg',
     blurb:
       'From the Journal of Professor Cecil B. Heimerdinger<br><br>10.14<br><br>09:15<br><br>Current meteorological conditions in Bandle City seem optimal. Atmospheric pressure is ideal for today\'s experiments!<br><br>Running a fifth trial for my ...',
     info: {
@@ -507,7 +507,7 @@ const inputChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Velkoz.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg',
     blurb:
       'I pass into the sudden glare. Blink. Blink, blink, blink. My eyes adjust and evaluate the landscape before me.<br><br>There\'s a scurrying. I look down to find a small, white creature standing on its hind legs, sniffing at my body. It intrigues me....',
     info: {
@@ -553,7 +553,7 @@ const outChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Cassiopeia.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg',
     blurb:
       'Cassiopeia is a terrifying creature - half woman, half snake - whose slightest glance brings death. The youngest daughter of one of Noxus\' most influential families, she was once a beautiful and cunning temptress capable of manipulating the hardest ...',
     info: {
@@ -597,7 +597,7 @@ const outChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/KogMaw.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg',
     blurb:
       '\'\'If that\'s just hungry, I don\'t want to see angry.\'\'<br><br>When the prophet Malzahar was reborn in Icathia, he was led there by an ominous voice which thereafter anchored itself to his psyche. From within, this voice bestowed upon him terrible ...',
     info: {
@@ -641,7 +641,7 @@ const outChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Mordekaiser.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg',
     blurb:
       '\'\'All things must die... and yet I live on.\'\'<br><br>The baleful revenant Mordekaiser is among the most terrifying and hateful spirits haunting the Shadow Isles. He has existed for countless centuries, shielded from true death by necromantic sorcery ...',
     info: {
@@ -729,7 +729,7 @@ const outChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Sona.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg',
     blurb:
       'Sona has no memories of her true parents. As an infant, she was found abandoned on the doorstep of an Ionian adoption house, nestled atop an ancient instrument in an exquisite case of unknown origins. She was an unusually well-behaved child, always ...',
     info: {
@@ -775,7 +775,7 @@ const inputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
     blurb:
       '\'\'All around me are empty husks, soulless and unafraid... but I will bring them fear.\'\'<br><br>Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical ...',
     info: {
@@ -818,7 +818,7 @@ const inputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
     blurb:
       'During the chaos of the Rune Wars, an enormous runestone was lost deep within the Plague Jungles. It remained there, untouched for centuries, emanating a potent magic which infused nearby wildlife with sentience and vitality. A group of monkeys who ...',
     info: {
@@ -861,7 +861,7 @@ const inputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Nasus.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
     blurb:
       '\'\'What was fallen will be great again.\'\'<br><br>Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and ...',
     info: {
@@ -906,7 +906,7 @@ const outputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
     blurb:
       '\'\'All around me are empty husks, soulless and unafraid... but I will bring them fear.\'\'<br><br>Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical ...',
     info: {
@@ -949,7 +949,7 @@ const outputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Nasus.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
     blurb:
       '\'\'What was fallen will be great again.\'\'<br><br>Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and ...',
     info: {
@@ -992,7 +992,7 @@ const outputRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
     blurb:
       'During the chaos of the Rune Wars, an enormous runestone was lost deep within the Plague Jungles. It remained there, untouched for centuries, emanating a potent magic which infused nearby wildlife with sentience and vitality. A group of monkeys who ...',
     info: {
@@ -1037,7 +1037,7 @@ const descRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
     blurb:
       'During the chaos of the Rune Wars, an enormous runestone was lost deep within the Plague Jungles. It remained there, untouched for centuries, emanating a potent magic which infused nearby wildlife with sentience and vitality. A group of monkeys who ...',
     info: {
@@ -1080,7 +1080,7 @@ const descRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Nasus.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
     blurb:
       '\'\'What was fallen will be great again.\'\'<br><br>Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and ...',
     info: {
@@ -1123,7 +1123,7 @@ const descRoles = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
     blurb:
       '\'\'All around me are empty husks, soulless and unafraid... but I will bring them fear.\'\'<br><br>Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical ...',
     info: {
@@ -1169,7 +1169,7 @@ const inputMaxLifeChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg',
     blurb:
       '\'\'All around me are empty husks, soulless and unafraid... but I will bring them fear.\'\'<br><br>Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical ...',
     info: {
@@ -1212,7 +1212,7 @@ const inputMaxLifeChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
     blurb:
       'During the chaos of the Rune Wars, an enormous runestone was lost deep within the Plague Jungles. It remained there, untouched for centuries, emanating a potent magic which infused nearby wildlife with sentience and vitality. A group of monkeys who ...',
     info: {
@@ -1255,7 +1255,7 @@ const inputMaxLifeChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/Nasus.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg',
     blurb:
       '\'\'What was fallen will be great again.\'\'<br><br>Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and ...',
     info: {
@@ -1300,7 +1300,7 @@ const outputMaxLifeChampions = [
     img:
       'https://www.masterypoints.com/assets/img/lol/champion_icons/MonkeyKing.png',
     splash:
-      'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
+      'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg',
     blurb:
       'During the chaos of the Rune Wars, an enormous runestone was lost deep within the Plague Jungles. It remained there, untouched for centuries, emanating a potent magic which infused nearby wildlife with sentience and vitality. A group of monkeys who ...',
     info: {

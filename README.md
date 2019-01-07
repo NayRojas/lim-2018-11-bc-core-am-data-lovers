@@ -82,7 +82,7 @@ Para ver la interfaz dar click aquí: [League of Legends](https://www.figma.com/
 
 
 <p align="center">
-<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/42ed3014d569f816002e2e78792b8a10.gif" width="300" height="471" border="0" alt="http://picasion.com/" /></a><br />
+<a href="https://picasion.com/"><img src="https://i.picasion.com/pic88/42ed3014d569f816002e2e78792b8a10.gif" width="300" height="471" border="0" alt="https://picasion.com/" /></a><br />
 </p>
 
 
@@ -103,7 +103,7 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 * [Zeplin](https://zpl.io/a75eMeR): Exportamos el prototipo de Figma a Zeplin para tomar el código que se ajuste a nuestro diseño y poder usarlo en la implementación de la interfaz.
 
 <p align="center">
-<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/f454edbb1fc3f08fb701e3f3b65d28ff.gif" width="300" height="137" border="0" alt="http://picasion.com/" /></a><br />
+<a href="https://picasion.com/"><img src="https://i.picasion.com/pic88/f454edbb1fc3f08fb701e3f3b65d28ff.gif" width="300" height="137" border="0" alt="https://picasion.com/" /></a><br />
 </p>
 
 *El por qué del diseño*
@@ -119,7 +119,7 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 * Construimos el prototipo utilizando la acción overlays para tener una manera distinta de navegación.
 
 <p align="center">
-<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/5d91ea73c7dfce84513d54f7d789b796.gif" width="300" height="378" border="0" alt="http://picasion.com/" /></a><br />
+<a href="https://picasion.com/"><img src="https://i.picasion.com/pic88/5d91ea73c7dfce84513d54f7d789b796.gif" width="300" height="378" border="0" alt="https://picasion.com/" /></a><br />
 </p>
 
 * Sobre el tipo de letra, tratamos que sea lo más cercano al usado en el site del juego.
