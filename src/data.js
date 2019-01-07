@@ -24,6 +24,7 @@ const createNumbersOfRoles = (data, role) => {
         mapChampionsPerRole.push(val);
       }
     });
+    return mapChampionsPerRole;
   }, []);
   return mapChampionsPerRole;
 };

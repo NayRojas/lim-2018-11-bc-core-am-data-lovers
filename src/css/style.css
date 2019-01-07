@@ -522,6 +522,16 @@ a + a{
   .container1000px{
     width: 1000px;
   }
+  
+  #banner img {
+    margin-top: -120px;
+  }
+  .bienvenida h2 {
+    font-size: 50px;
+  }
+  .description-text {
+    font-size: 30px;
+  }
 }
 
 @media(min-width: 768px) {
@@ -541,6 +551,21 @@ a + a{
   header label {
     display: none;
   }
+
+  #banner {
+    height: 350px;
+    overflow: hidden;
+  }
+  #banner img {
+    height: auto;
+    margin-top: -100px;
+  }
+  #banner a{
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+  }
 }
 
 @media(min-width: 480px){
@@ -551,22 +576,11 @@ a + a{
   #banner a {
     margin-top: 25px;
   }
-}
 
-@media (min-width: 768px){
-  #banner {
-    height: 350px;
-    overflow: hidden;
-  }
-  #banner img {
-    height: auto;
-    margin-top: -100px;
-  }
-}
-
-
-@media (min-width: 1024px){
-  #banner img {
-    margin-top: -120px;
+  #banner a{
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
   }
 }
