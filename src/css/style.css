@@ -160,9 +160,8 @@ header label{
 
 .description-text{
   text-align: center;
-  font-family: 'Sorts Mill Goudy', serif;
   font-size: 17px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'sans-serif';
   color: rgb(153, 150, 150);
   margin: 10px  10px;
 }
@@ -544,4 +543,30 @@ a + a{
   }
 }
 
-@media(min-width)
+@media(min-width: 480px){
+  #banner h1{
+    font-size: 45px;
+  }
+
+  #banner a {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 768px){
+  #banner {
+    height: 300px;
+    overflow: hidden;
+  }
+  #banner img {
+    height: auto;
+    margin-top: -100px;
+  }
+}
+
+
+@media (min-width: 1024px){
+  #banner img {
+    margin-top: -150px;
+  }
+}
