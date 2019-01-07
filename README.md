@@ -159,8 +159,4 @@ Colocamos todos los recursos que estructuramos y de consulta que utilizamos dura
 * Chatbox: Para atender las dudas/sugerencias de los usuarios.
 * Vídeo explicativo de la interfaz.
 * Rotación de campeones: Implementar un método que permita la asignación aleatoria de campeones por semana.
-<<<<<<< HEAD
 * Visualizaciones gráficas: Google Charts.
-=======
-* Visualizaciones gráficas: Google Charts.
->>>>>>> 1d10206ac200d0d2610465fd912766567d4fcea0
