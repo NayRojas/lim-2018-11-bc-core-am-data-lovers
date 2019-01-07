@@ -189,7 +189,7 @@ const selectingChampionsByRoles = () => {
     cleanValues();
     document.getElementById('titulo').innerHTML = 'marksman';
     document.getElementById('description-del-rol').innerHTML = 'Marksmen are ranged champions whose power almost exclusively revolves around their basic attacks';
-    let marksman = lol.filterData(window.LOL.data, 'marksman');
+    let marksman = lol.filterData(window.LOL.data, 'Marksman');
     document.getElementById('numero-de-campeones').innerHTML = marksman.length + '  CHAMPIONS';
     showingChampionsByRole(marksman);
     let maxLifeChampions = lol.computeStats(marksman, 'Max'); 
@@ -221,6 +221,7 @@ goToHome.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'block';
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'none';
+  document.getElementById('cuarta-pantalla').style.display = 'none';
   cleanValues();
 });
 /* MENU: Boton para ir a home*/
