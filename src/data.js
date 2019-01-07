@@ -57,16 +57,14 @@ const getMaxAndMinChampions = (array, mathFunction) => {
     return result;
   }, []);
   let mathOperation = calminAndMaxHpChampion(hpPerChampion, mathFunction); // Esta función me arroja el número maximo de vida
-  console.log(mathOperation);
 
-  const championMaxHp = mapStatsPerChampion.map(accum => accum).filter(function(accum, index) {
+  mapStatsPerChampion.map(accum => accum).filter(function(accum, index) {
     if (mathOperation === accum.hp) { // Esta condición compara si el maximo de vida es igual a la vida de cada stats de los campeones
       maxHpchampion.push(array[index]); // Si se cumple agrega a la variable el indice de ese campeon con sus
     }
-    console.log(maxHpchampion)
     return maxHpchampion;
   });
-  return championMaxHp;
+  return maxHpchampion;
 };
 
 const calminAndMaxHpChampion = (hpPerChampion, mathFunction) => {
@@ -80,19 +78,11 @@ const calminAndMaxHpChampion = (hpPerChampion, mathFunction) => {
   return minAndMaxHpChampion;
 };
 
-
-/* console.log(stats);
-  let max = Math.max(entriesOfChampions);
-  maxAndMinHpChampion.push(max);
-  console.log(max);
-  // entriesOfChampions.reduce((result, champion) => result = result > champion.stats ? result : champion.stats, 0); 
-  */
-
-
 window.lol = {
   getFiveChampeons: selectFiveChampions,
   filterData: createNumbersOfRoles,
   sortData: sorting,
-  computeStats: getMaxAndMinChampions 
+  computeStats: getMaxAndMinChampions,
+  calculateStats: calminAndMaxHpChampion
 };
 

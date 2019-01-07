@@ -358,6 +358,7 @@ div .nombre-en-rol{
 
 div #card-avatar{
   margin: 10px auto 10px auto;
+  height: 90px;
 }
 
 #todos-los-campeones-por-rol{
@@ -407,13 +408,30 @@ div #card-avatar{
   font-weight: bolder;
   width: 220px;
   padding: 5px;
-};
+}
 
 #botones-para-mayor-y-menor-vida{
   display: block;
   top: 20px;
   bottom: 20px;
-};
+}
+
+/*ESTILOS DE LA CUARTA HISTORIA*/
+.elemento-avatar .vida-de-campeon{
+  font-size: 18px;
+  color: #0a0a0c;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-variant-caps: all-small-caps;
+  font-family: 'Lato', sans-serif;
+}
+
+#campeones-con-maxima-y-minima-vida .avatar{
+  top: auto;
+  bottom: auto;
+  width: 65px;
+  height: 65px;
+}
 
 /************ESTILO DEL FOOTER*****************/
 footer {
