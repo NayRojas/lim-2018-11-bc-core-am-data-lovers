@@ -381,8 +381,8 @@ div #card-avatar{
 
 #botones-para-ordenar{
   display: flex;
-  margin: 5px auto 5px auto;
-  width: 220px;
+  margin: 15px auto 15px auto;
+  max-width: 560px;
   height: 50px;
   align-content: center;
 }
@@ -535,6 +535,19 @@ a + a{
     max-height: 1000px;
   }
 
+  #todos-los-campeones-por-rol {
+    margin-top: 50px;
+  }
+
+  div #card-avtar {
+    height: 60px;
+  }
+  .elemento-avatar{
+    width: 500px;
+    height: 70px;
+    margin: 20px auto 20px auto;
+  }
+
   .blurb-del-campeon {
     font-size: 25px;
     font-weight: 600;
@@ -557,8 +570,8 @@ a + a{
   }
   .todos-los-campeones{
     font-size: 35px;
-    padding: 20px;
-    width: 300px;
+    padding: 10px;
+    width: 600px;
     margin-top:20px;
   }
 
@@ -587,6 +600,7 @@ a + a{
 }
 
 @media(min-width: 768px) {
+
   .menu{
     position: static;
     width: auto;
@@ -630,6 +644,10 @@ a + a{
     font-size: 25px;
   }
   .elemento-to-roles {
+    display: block;
+    margin: 20px auto 20px auto;
+    
+    width: 700px;
     height: 800px;
   }
   .img-ppl-role {
@@ -712,7 +730,6 @@ a + a{
   }
 }
 
-
 @media(width: 320px){
   .elemento{
     max-height: 700px;
@@ -723,7 +740,7 @@ a + a{
     max-height: 420px;
   }
   div #card-avatar {
-    height: 75px;
+    max-height: 70px;
   }
   #campeones-con-maxima-y-minima-vida .elemento-avatar{
     height: 90px;
@@ -799,10 +816,7 @@ a + a{
   .todos-los-campeones {
     width: 700px;
   }
-  #botones-para-ordenar {
-    width: 700px;
-    height: 100px;
-  }
+ 
   .elemento-avatar {
     width: 500px;
     margin-top: 50px;
@@ -823,5 +837,37 @@ a + a{
   #campeones-con-maxima-y-minima-vida .avatar {
     width: 89px;
     height: 89px;
+  }
+  .boton-pequeño {
+    width: 230px;
+  }
+}
+
+@media(width: 2560px){
+
+  .todos-los-campeones {
+    width: 500px;
+  }
+  #botones-para-ordenar {
+    width: 500px;
+  }
+  .boton-pequeño {
+    width: 500px;
+  }
+  .elemento-avatar {
+    width: 500px;
+  }
+  #todos-los-campeones-por-rol {
+    margin: 80px auto 80px auto;
+  }
+  .avatar {
+    width: 85px;
+    height: 85px;
+  }
+  .nombre-del-campeon {
+    font-size: 50px;
+  }
+  .titulo-del-campeon {
+    font-size: 24px;
   }
 }
