@@ -97,7 +97,6 @@ header label{
   text-align: center;
   display: block;
   float: left;
-  display: none;
 }
 
 #banner{
@@ -270,11 +269,17 @@ div .todos-los-campeones{
   
 }
 
-/************VIDEO TUTORIAL*****************/
+/************VIDEO TUTORIAL****************
 iframe{
   display: block;
   margin: auto;
   align-content: center;
+}*/
+
+.tutorial{
+  width: 330px; 
+  height:  190px;
+  margin: 10px 0 10px 0;
 }
 
 /************ESTILO DE SEGUNDA HISTORIA: CARD DE ROLES*****************/
@@ -472,7 +477,6 @@ footer img {
 }
 
 footer #redes-en-footer{
-  display: block;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -494,6 +498,50 @@ a + a{
   margin-left: 15px;
 }
 
-#titulo-campeones-por-rol{
+#titulo-campeones-por-rol {
   color: aquamarine;
 }
+
+@media(min-width: 1024px) {
+  .menu{
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
+
+  .menu a {
+    border:none;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .container1000px{
+    width: 1000px;
+  }
+}
+
+@media(min-width: 768px) {
+  .menu{
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
+
+  .menu a {
+    border:none;
+  }
+
+  header label {
+    display: none;
+  }
+}
+
+@media(min-width)
