@@ -529,17 +529,28 @@ a + a{
   .bienvenida h2 {
     font-size: 50px;
   }
-  .description-text {
-    font-size: 30px;
-  }
-  
+
   .elemento{
-  height: 900px;
-  height: 500px;
-  display: block;
-  
+    flex-basis: 200px;
+    max-height: 1000px;
   }
-  
+
+  .blurb-del-campeon {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+  }
+  .niveles-del-campeon{
+  font-size: 25px;
+  }
+  .end {
+    font-size: 45px;
+  }
+
+  .end {
+    font-size: 45px;
+  }
 }
 
 @media(min-width: 768px) {
@@ -572,6 +583,20 @@ a + a{
     width: 20%;
     text-align: center;
     font-weight: 500;
+    font-size: 25px;
+  }
+
+  .elemento{
+    flex-basis: 200px;
+    max-height: 1000px;
+  }
+  .nombre-del-campeon {
+    font-size: 60px;
+  }
+  .titulo-del-campeon {
+    font-size: 35px;
+  }
+  .description-text{
     font-size: 25px;
   }
 }
