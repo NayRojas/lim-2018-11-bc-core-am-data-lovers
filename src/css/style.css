@@ -555,7 +555,7 @@ a + a{
 
 @media (min-width: 768px){
   #banner {
-    height: 300px;
+    height: 350px;
     overflow: hidden;
   }
   #banner img {
@@ -567,6 +567,6 @@ a + a{
 
 @media (min-width: 1024px){
   #banner img {
-    margin-top: -150px;
+    margin-top: -120px;
   }
 }
