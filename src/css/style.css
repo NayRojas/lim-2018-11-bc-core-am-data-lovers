@@ -362,7 +362,7 @@ div .nombre-en-rol{
 
 div #card-avatar{
   margin: 10px auto 10px auto;
-  height: 90px;
+  height: 97px;
 }
 
 #todos-los-campeones-por-rol{
@@ -546,10 +546,43 @@ a + a{
   }
   .end {
     font-size: 45px;
+    margin-top: 70px;
+  }
+  div .tutorial {
+    display: block;
+    width: 1000px; 
+    height:  600px;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+  }
+  .todos-los-campeones{
+    font-size: 35px;
+    padding: 20px;
+    width: 300px;
+    margin-top:20px;
   }
 
-  .end {
-    font-size: 45px;
+  footer {
+    max-width: 100%;
+    max-height: 60%;
+    margin-top: 5em;
+  }
+
+  footer p{
+    font-size: 25px;
+  }
+  footer #redes-en-footer {
+    width: 100%;
+    display: block;
+    margin: auto auto 10px auto;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  footer img {
+    max-width: 150px;
+    max-height: 60px;
+    margin-bottom: 15px;
   }
 }
 
@@ -562,15 +595,12 @@ a + a{
     float: right;
     display: flex;
   }
-
   .menu a {
     border:none;
   }
-
   header label {
     display: none;
   }
-
   #banner {
     height: 350px;
     overflow: hidden;
@@ -585,10 +615,10 @@ a + a{
     font-weight: 500;
     font-size: 25px;
   }
-
   .elemento{
     flex-basis: 200px;
     max-height: 1000px;
+    border: 10px double rgb(185, 185, 185);
   }
   .nombre-del-campeon {
     font-size: 60px;
@@ -599,11 +629,21 @@ a + a{
   .description-text{
     font-size: 25px;
   }
+  .elemento-to-roles {
+    height: 800px;
+  }
+  .img-ppl-role {
+    max-height: 780px;
+  }
+  div .tutorial {
+    height: 300px;
+    width: 500px;
+  }
 }
 
-@media(min-width: 480px){
+@media(min-width: 360px){
   #banner h1{
-    font-size: 45px;
+    font-size: 20pxpx;
   }
 
   #banner a {
@@ -614,6 +654,174 @@ a + a{
     width: 20%;
     text-align: center;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 15px;
+  }
+  div .tutorial {
+    display: block;
+    width: 315px; 
+    height:  200px;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+  }
+}
+
+@media(width: 411px){
+  #banner h1{
+    font-size: 20px;
+  }
+
+  #banner a{
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 25px;
+  }
+
+  div .tutorial {
+    display: block;
+    width: 315px; 
+    height:  200px;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+  }
+  .bienvenida h2 {
+    font-size: 27px;
+    margin: auto;
+  }
+  .elemento{
+    flex-basis: 200px;
+    max-height: 500px;
+  }
+  .blurb-del-campeon {
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+  }
+  .niveles-del-campeon{
+  font-size: 15px;
+  }
+  div .tutorial {
+    display: block;
+    width: 370px; 
+    height:  200px;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}
+
+
+@media(width: 320px){
+  .elemento{
+    max-height: 700px;
+    display: block;
+    margin: 10px 10px 10px 10px;
+  }
+  .img-ppl-role {
+    max-height: 420px;
+  }
+  div #card-avatar {
+    height: 75px;
+  }
+  #campeones-con-maxima-y-minima-vida .elemento-avatar{
+    height: 90px;
+  }
+}
+  
+@media(width: 414px){
+  .elemento{
+    max-height: 460px;
+  }
+  .bienvenida h2 {
+    margin: 4px;
+  }
+  .blurb-del-campeon {
+    text-align: center;
+  }
+  .niveles-del-campeon {
+    font-size: 15px;
+  }
+  .img-ppl-role {
+    max-height: 450px;
+  }
+  div #card-avatar {
+    height: 75px;
+  }
+  #campeones-con-maxima-y-minima-vida .elemento-avatar{
+    height: 90px;
+  }
+  div .tutorial {
+    width: 380px; 
+    height:  200px;
+  }
+  .elemento-to-roles{
+    height: 500px;
+  }
+}
+  
+@media(width: 1024px){
+  div .tutorial {
+  width: 980px; 
+  height:  500px;
+  }  
+  .elemento{
+    flex-basis: 200px;
+    max-height: 970px;
+    border: 10px double rgb(185, 185, 185);
+  }
+  .elemento-to-roles {
+    width: 700px;
+    height: 900px;
+    margin: 20px auto 20px auto;
+  }
+  .img-ppl-role {
+    max-height: 880px;
+  }
+  .roles-titulo {
+    font-size: 50px;
+  }
+  .description-text {
+    font-size: 32px;
+    margin: auto 20px auto 20px;
+  }
+  .upperstyle {
+    font-size:  70px;
+  }
+  #numero-de-campeones {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .description-text {
+    margin-bottom: 20px;
+  }
+  .todos-los-campeones {
+    width: 700px;
+  }
+  #botones-para-ordenar {
+    width: 700px;
+    height: 100px;
+  }
+  .elemento-avatar {
+    width: 500px;
+    margin-top: 50px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  #todos-los-campeones-por-rol {
+    margin-top: 50px;
+  }
+  div .nombre-en-rol{
+    font-size: 40px;
+  }
+  .elemento-avatar .titulo-en-rol {
+    font-size: 20px;
+  }
+  #campeones-con-maxima-y-minima-vida .avatar {
+    width: 89px;
+    height: 89px;
   }
 }
