@@ -1,878 +1,876 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Sorts+Mill+Goudy');
-
-body{
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: inherit;
-  font-family: sans-serif;
+body {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: inherit;
+    font-family: sans-serif;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section{
-  width: 100%;
-  margin-bottom: 25px;
+section {
+    width: 100%;
+    margin-bottom: 25px;
 }
+
 
 /*********************************HEADER*****************************/
-header{
-  width: 100%;
-  height: 60px;
-  background: #000000;
-  color: rgb(212, 170, 115);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100; /*Lo coloca por encima de los demas elementos*/
-  font-family: 'Lato', sans-serif;
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #000000;
+    color: rgb(212, 170, 115);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /*Lo coloca por encima de los demas elementos*/
+    font-family: 'Lato', sans-serif;
 }
 
-.container{
-  width: 98%;
-  margin: auto;
+.container {
+    width: 98%;
+    margin: auto;
 }
 
-header .container{
-  display: table;
+header .container {
+    display: table;
 }
 
-.logo{
-  width: 40px;
-  height:40px;
-  position: relative;
-  float: left;
-  margin: 10px 0 0 0;
+.logo {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: left;
+    margin: 10px 0 0 0;
 }
+
 
 /*********************************MENU*****************************/
-#menu-bar{
-  display: none;
+
+#menu-bar {
+    display: none;
 }
 
-header label{
-  float: right;
-  margin: 6px 0;
-  cursor: pointer;
-  font-size: 28px;
+header label {
+    float: right;
+    margin: 6px 0;
+    cursor: pointer;
+    font-size: 28px;
 }
 
-.menu{
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(7, 7, 14, 0.9);
-  transition: all 0.5s;
-  transform: translateX(-100%);
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(7, 7, 14, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
 }
 
-.menu a{
-  display:block;
-  color:#E9C361;
-  height: 50px;
-  text-decoration: none;
-  padding: 15px;
-  border-bottom: 0.5px solid rgba(255,255,255, 0.5);
+.menu a {
+    display: block;
+    color: #E9C361;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
-.menu a:hover{
-  background: rgba(255,255,255, 0.3);
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
-#menu-bar:hover ~ .menu{
-  transform: translateX(0%);
+#menu-bar:hover~.menu {
+    transform: translateX(0%);
 }
+
 
 /*********************************BANNER*****************************/
-#logo-lol{
-  width: 30px;
-  height: 15px;
-  margin:20px auto 0;
-  text-align: center;
-  display: block;
-  float: left;
+
+#logo-lol {
+    width: 30px;
+    height: 15px;
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    float: left;
 }
 
-#banner{
-  margin-top: 50px;
-  position: relative;
+#banner {
+    margin-top: 50px;
+    position: relative;
 }
 
-#banner img{
-  width: 100%;
-  height: 100%;
+#banner img {
+    width: 100%;
+    height: 100%;
 }
 
-#banner .container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-40%);
-  color: rgb(233, 233, 233);
+#banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    color: rgb(233, 233, 233);
 }
 
-#banner h1{
-  font-size: 20px;
-  width: 80%;
-  float: left;
-  padding: 15px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  text-shadow: 15px 15px 50px rgb(0, 1, 2);
-  letter-spacing: 2px;
+#banner h1 {
+    font-size: 20px;
+    width: 80%;
+    float: left;
+    padding: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-shadow: 15px 15px 50px rgb(0, 1, 2);
+    letter-spacing: 2px;
 }
 
-#banner a{
-  display: block;
-  float: left;
-  width: 30%;
-  text-align: center;
-  padding: 7px;
-  margin-left: 10px;
-  color:rgb(233, 233, 233);
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.712);
-  border: 1px solid rgba(0, 0, 15, 0.966);
-  font-family: 'Sorts Mill Goudy', serif;
-  font-weight: 200;
-  border-radius: 5px;
+#banner a {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 7px;
+    margin-left: 10px;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.712);
+    border: 1px solid rgba(0, 0, 15, 0.966);
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight: 200;
+    border-radius: 5px;
 }
 
-#banner a:hover{
-  background:rgb(0, 0, 0);
-  color:rgb(160, 141, 56); 
-  font-weight: 700;
+#banner a:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(160, 141, 56);
+    font-weight: 700;
 }
+
 
 /*********************************CAMPEONES*****************************/
-.bienvenida h2{
-  text-align: center;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 28px;
-  color:rgb(241, 175, 112);
+
+.bienvenida h2 {
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 28px;
+    color: rgb(241, 175, 112);
 }
 
-.description-text{
-  text-align: center;
-  font-size: 17px;
-  font-family: 'Lato', 'sans-serif';
-  color: rgb(153, 150, 150);
-  margin: 10px  10px;
+.description-text {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Lato', 'sans-serif';
+    color: rgb(153, 150, 150);
+    margin: 10px 10px;
 }
 
-.img-principal{
-  width: 100%;
+.img-principal {
+    width: 100%;
 }
 
-.nombre-del-campeon{
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 38px;
-  font-weight: bolder;
-  font-variant-caps: all-small-caps;
-  color: rgb(20, 20, 20);
+.nombre-del-campeon {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 38px;
+    font-weight: bolder;
+    font-variant-caps: all-small-caps;
+    color: rgb(20, 20, 20);
 }
 
-.titulo-del-campeon{
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 20px;
-  color: rgb(117, 85, 26);
+.titulo-del-campeon {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 20px;
+    color: rgb(117, 85, 26);
 }
 
-.blurb-del-campeon{
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  text-align: justify;
-  color: rgb(27, 27, 27);
-  padding: 5px; 
-}
-.niveles-del-campeon{
-  font-family: 'Lato', sans-serif;
-  font-size: 11px;
-  color: rgb(51, 51, 51);
-  padding: 5px; 
-  margin: 2px;
-  padding-bottom: 15px;
+.blurb-del-campeon {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    color: rgb(27, 27, 27);
+    padding: 5px;
 }
 
-label .nivel-en-numero{
-  font-weight: bolder;
-  color: rgb(17, 17, 17);
-}
-.rol-del-campeon{
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 20px;
-  color: rgb(117, 85, 26);
-  background-color: #000000;
+.niveles-del-campeon {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    color: rgb(51, 51, 51);
+    padding: 5px;
+    margin: 2px;
+    padding-bottom: 15px;
 }
 
-.elemento{
-  flex-basis: 200px;
-  max-height: 420px;
-  display: block;
-  margin: 10px;
-  text-align: center;
-  align-content: center;
-  border: 5px double rgb(185, 185, 185);
-  border-radius: 3px;
-  background-color: rgba(248, 224, 196, 0.9);
+label .nivel-en-numero {
+    font-weight: bolder;
+    color: rgb(17, 17, 17);
 }
 
-
-#descripion-de-los-top-5{
-  position: relative;
-  align-content: center;
-  color: rgb(29, 29, 29);
+.rol-del-campeon {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 20px;
+    color: rgb(117, 85, 26);
+    background-color: #000000;
 }
 
-div .todos-los-campeones{
-  display: block;
-  margin: auto auto auto auto;
-  align-content: center;
+.elemento {
+    flex-basis: 200px;
+    max-height: 420px;
+    display: block;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    border: 5px double rgb(185, 185, 185);
+    border-radius: 3px;
+    background-color: rgba(248, 224, 196, 0.9);
 }
+
+#descripion-de-los-top-5 {
+    position: relative;
+    align-content: center;
+    color: rgb(29, 29, 29);
+}
+
+div .todos-los-campeones {
+    display: block;
+    margin: auto auto auto auto;
+    align-content: center;
+}
+
 
 /************BOTON TODOS LOS CAMPEONES: Lleva a la segunda historia*****************/
-.todos-los-campeones{
-  background: #ffd56b;
-  background-image: -webkit-linear-gradient(top, #ffd56b, #664100);
-  background-image: linear-gradient(to bottom, #ffd56b, #664100);
-  border-radius: 10px;
-  font-family: 'Sorts Mill Goudy', serif;
-  color: #161616;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 10px 10px 10px;
-  margin: auto;
-  text-decoration: none;
-  display: block;
+
+.todos-los-campeones {
+    background: #ffd56b;
+    background-image: -webkit-linear-gradient(top, #ffd56b, #664100);
+    background-image: linear-gradient(to bottom, #ffd56b, #664100);
+    border-radius: 10px;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    text-decoration: none;
+    display: block;
 }
-  
+
 .todos-los-campeones:hover {
-  cursor: pointer;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
-}
-    
-
-.end{
-  text-align: center;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 25px;
-  color:rgb(238, 240, 235);
-  padding: 10px;
-  justify-content: center;
-  
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
 }
 
-/************VIDEO TUTORIAL****************
-iframe{
-  display: block;
-  margin: auto;
-  align-content: center;
-}*/
-
-.tutorial{
-  width: 330px; 
-  height:  190px;
-  margin: 10px 0 10px 0;
+.end {
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+    color: rgb(238, 240, 235);
+    padding: 10px;
+    justify-content: center;
 }
+
+
+/************VIDEO TUTORIAL****************/
+
+iframe {
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+#tutorial {
+    width: 330px;
+    height: 190px;
+    margin: 30px auto 10px auto;
+    align-items: center;
+}
+
 
 /************ESTILO DE SEGUNDA HISTORIA: CARD DE ROLES*****************/
-.elemento-to-roles{
-  flex-basis: 200px;
-  height: 430px;
-  background-color: rgba(0, 0, 0, 0.9);
-  cursor: pointer;
-  border: 5px double rgb(238, 198, 98);
+
+.elemento-to-roles {
+    flex-basis: 200px;
+    height: 430px;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    border: 5px double rgb(238, 198, 98);
 }
 
-.img-ppl-role{
-  max-height: 410px;
+.img-ppl-role {
+    max-height: 410px;
 }
 
-.roles-titulo{
-  text-align: center;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 28px;
-  color:rgb(241, 175, 112);
-  margin:80px auto 10px auto;
+.roles-titulo {
+    text-align: center;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 28px;
+    color: rgb(241, 175, 112);
+    margin: 80px auto 10px auto;
 }
 
 #scrollToTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 10px;
-  border: none;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: rgb(231, 181, 73);
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 60px;
-  border-color: #664100
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(231, 181, 73);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 60px;
+    border-color: #664100
 }
+
 
 /*ESTILOS DE LA TERCERA HISTORIA*/
-.elemento-avatar{
-  flex-wrap: wrap;
-  width: 250px;
-  height: 70px;
-  margin: 5px 10px 5px 10px;
-  text-align: center;
-  align-content: center;
-  border: 5px double rgb(238, 198, 98);
-  border-radius: 3px;
-  background-color: rgba(248, 224, 196, 0.9);
+
+.elemento-avatar {
+    flex-wrap: wrap;
+    width: 250px;
+    height: 70px;
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    align-content: center;
+    border: 5px double rgb(238, 198, 98);
+    border-radius: 3px;
+    background-color: rgba(248, 224, 196, 0.9);
 }
 
-.elemento-avatar .avatar-div{
-  width: 30%;
-  height: 70px;
-  float: left;
+.elemento-avatar .avatar-div {
+    width: 30%;
+    height: 70px;
+    float: left;
 }
 
-.elemento-avatar .text-div{
-  width: 70%;
-  height: 70px;
-  float: right;
+.elemento-avatar .text-div {
+    width: 70%;
+    height: 70px;
+    float: right;
 }
 
-.avatar{
-  top:10px;
-  bottom: 5px;
-  width: 58px;
-  height: 58px;
+.avatar {
+    top: 10px;
+    bottom: 5px;
+    width: 58px;
+    height: 58px;
 }
 
-div .nombre-en-rol{ 
-  font-size: 25px;
-  margin: 0px;
+div .nombre-en-rol {
+    font-size: 25px;
+    margin: 0px;
 }
 
-.elemento-avatar .titulo-en-rol{
-  font-size: 15px;
+.elemento-avatar .titulo-en-rol {
+    font-size: 15px;
 }
 
-div #card-avatar{
-  margin: 10px auto 10px auto;
-  height: 97px;
+div #card-avatar {
+    margin: 10px auto 10px auto;
+    height: 97px;
 }
 
-#todos-los-campeones-por-rol{
-  height: 50;
-  width: 300;
-  display: block;
-  margin: auto;
+#todos-los-campeones-por-rol {
+    height: 50;
+    width: 300;
+    display: block;
+    margin: auto;
 }
 
-.upperstyle{
-  font-size: 45px;
-  font-variant-caps: all-small-caps;
-  margin:50px auto 5px auto;
-  letter-spacing: 3px;
+.upperstyle {
+    font-size: 45px;
+    font-variant-caps: all-small-caps;
+    margin: 50px auto 5px auto;
+    letter-spacing: 3px;
 }
 
-#botones-para-ordenar{
-  display: flex;
-  margin: 15px auto 15px auto;
-  max-width: 560px;
-  height: 50px;
-  align-content: center;
+#botones-para-ordenar {
+    display: flex;
+    margin: 15px auto 15px auto;
+    max-width: 560px;
+    height: 50px;
+    align-content: center;
 }
 
-.boton-pequeño{
-  font-size: 14px;
-  font-weight: 400;
-  padding: 5px 5px 5px 5px;
-  float: right;
-  margin-top: 10px;
+.boton-pequeño {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px;
+    float: right;
+    margin-top: 10px;
 }
 
-#numero-de-campeones{
-  border-top: 0.5px solid rgb(109, 109, 109);
-  padding-top:10px;
-  font-size: 17px;
-  font-weight: bolder;
-  font-kerning: normal;
+#numero-de-campeones {
+    border-top: 0.5px solid rgb(109, 109, 109);
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    font-kerning: normal;
 }
 
-.botongris{
-  background: #c7c6c4;
-  background-image: -webkit-linear-gradient(top, #c7c7c7, #414141);
-  background-image: linear-gradient(to bottom, #c7c7c7, #414141);
-  border: 3px double rgb(146, 146, 146);
-  font-size: 15px;
-  font-weight: bolder;
-  width: 220px;
-  padding: 5px;
+.botongris {
+    background: #c7c6c4;
+    background-image: -webkit-linear-gradient(top, #c7c7c7, #414141);
+    background-image: linear-gradient(to bottom, #c7c7c7, #414141);
+    border: 3px double rgb(146, 146, 146);
+    font-size: 15px;
+    font-weight: bolder;
+    width: 220px;
+    padding: 5px;
 }
 
-#botones-para-mayor-y-menor-vida{
-  display: block;
-  top: 20px;
-  bottom: 20px;
+#botones-para-mayor-y-menor-vida {
+    display: block;
+    top: 20px;
+    bottom: 20px;
 }
+
 
 /*ESTILOS DE LA CUARTA HISTORIA*/
-.elemento-avatar .vida-de-campeon{
-  font-size: 18px;
-  color: #0a0a0c;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  font-variant-caps: all-small-caps;
-  font-family: 'Lato', sans-serif;
+
+.elemento-avatar .vida-de-campeon {
+    font-size: 18px;
+    color: #0a0a0c;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+    font-family: 'Lato', sans-serif;
 }
 
-#campeones-con-maxima-y-minima-vida .avatar{
-  top: auto;
-  bottom: auto;
-  width: 65px;
-  height: 65px;
+#campeones-con-maxima-y-minima-vida .avatar {
+    top: auto;
+    bottom: auto;
+    width: 65px;
+    height: 65px;
 }
+
 
 /************ESTILO DEL FOOTER*****************/
+
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0.5rem;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 0;
-  margin-top: 3rem;
-  left: 0;
-  z-index: 100;
-  max-width: 100%;
-  max-height:50%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    margin-top: 3rem;
+    left: 0;
+    z-index: 100;
+    max-width: 100%;
+    max-height: 50%;
 }
 
-footer p{
-  font-family: 'Sorts Mill Goudy', serif;
-  text-align: center;
-  color: rgb(121, 121, 121);
-  font-size: 13px;
-  padding: 10px;
+footer p {
+    font-family: 'Sorts Mill Goudy', serif;
+    text-align: center;
+    color: rgb(121, 121, 121);
+    font-size: 13px;
+    padding: 10px;
 }
 
-#logo-en-footer{
-  margin: auto;
-  justify-content: center;
-
+#logo-en-footer {
+    margin: auto;
+    justify-content: center;
 }
 
 footer img {
-  max-width: 70px;
-  max-height:30px; 
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3px;
+    max-width: 70px;
+    max-height: 30px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px;
 }
 
-footer #redes-en-footer{
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  color: aliceblue;
-}
-footer #logo-en-footer{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
-
+footer #redes-en-footer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
 }
 
-footer a{
-  color: aliceblue;
-  text-decoration: none;
+footer #logo-en-footer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
-a + a{
-  margin-left: 15px;
+footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a+a {
+    margin-left: 15px;
 }
 
 #titulo-campeones-por-rol {
-  color: aquamarine;
+    color: aquamarine;
 }
 
 @media(min-width: 1024px) {
-  .menu{
-    position: static;
-    width: auto;
-    height: auto;
-    transform: translateX(0%);
-    float: right;
-    display: flex;
-  }
-
-  .menu a {
-    border:none;
-  }
-
-  header label {
-    display: none;
-  }
-
-  .container1000px{
-    width: 1000px;
-  }
-  
-  #banner img {
-    margin-top: -120px;
-  }
-  .bienvenida h2 {
-    font-size: 50px;
-  }
-
-  .elemento{
-    flex-basis: 200px;
-    max-height: 1000px;
-  }
-
-  #todos-los-campeones-por-rol {
-    margin-top: 50px;
-  }
-
-  div #card-avtar {
-    height: 60px;
-  }
-  .elemento-avatar{
-    width: 500px;
-    height: 70px;
-    margin: 20px auto 20px auto;
-  }
-
-  .blurb-del-campeon {
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-    margin: 10px 5px 10px 5px;
-  }
-  .niveles-del-campeon{
-  font-size: 25px;
-  }
-  .end {
-    font-size: 45px;
-    margin-top: 70px;
-  }
-  div .tutorial {
-    display: block;
-    width: 1000px; 
-    height:  600px;
-    margin: 20px auto 40px auto;
-    border-radius: 8px;
-  }
-  .todos-los-campeones{
-    font-size: 35px;
-    padding: 10px;
-    width: 600px;
-    margin-top:20px;
-  }
-
-
-.mySlides{
-  animation: slide 0.5s forwards;
-} 
-
-  footer {
-    max-width: 100%;
-    max-height: 60%;
-    margin-top: 5em;
-  }
-
-  footer p{
-    font-size: 25px;
-  }
-  footer #redes-en-footer {
-    width: 100%;
-    display: block;
-    margin: auto auto 10px auto;
-    text-align: center;
-    font-size: 23px;
-  }
-
-  footer img {
-    max-width: 150px;
-    max-height: 60px;
-    margin-bottom: 15px;
-  }
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu a {
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+    .container1000px {
+        width: 1000px;
+    }
+    #banner img {
+        margin-top: -120px;
+    }
+    .bienvenida h2 {
+        font-size: 50px;
+    }
+    .elemento {
+        flex-basis: 200px;
+        max-height: 1000px;
+    }
+    #todos-los-campeones-por-rol {
+        margin-top: 50px;
+    }
+    div #card-avtar {
+        height: 60px;
+    }
+    .elemento-avatar {
+        width: 500px;
+        height: 70px;
+        margin: 20px auto 20px auto;
+    }
+    .blurb-del-campeon {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin: 10px 5px 10px 5px;
+    }
+    .niveles-del-campeon {
+        font-size: 25px;
+    }
+    .end {
+        font-size: 45px;
+        margin-top: 70px;
+    }
+    div .tutorial {
+        display: block;
+        width: 1000px;
+        height: 600px;
+        margin: 20px auto 40px auto;
+        border-radius: 8px;
+    }
+    .todos-los-campeones {
+        font-size: 35px;
+        padding: 10px;
+        width: 600px;
+        margin-top: 20px;
+    }
+    .mySlides {
+        animation: slide 0.5s forwards;
+    }
+    footer {
+        max-width: 100%;
+        max-height: 60%;
+        margin-top: 5em;
+    }
+    footer p {
+        font-size: 25px;
+    }
+    footer #redes-en-footer {
+        width: 100%;
+        display: block;
+        margin: auto auto 10px auto;
+        text-align: center;
+        font-size: 23px;
+    }
+    footer img {
+        max-width: 150px;
+        max-height: 60px;
+        margin-bottom: 15px;
+    }
 }
 
 @media(min-width: 768px) {
-
-  .menu{
-    position: static;
-    width: auto;
-    height: auto;
-    transform: translateX(0%);
-    float: right;
-    display: flex;
-  }
-  .menu a {
-    border:none;
-  }
-  header label {
-    display: none;
-  }
-  #banner {
-    height: 350px;
-    overflow: hidden;
-  }
-  #banner img {
-    height: auto;
-    margin-top: -100px;
-  }
-  #banner a{
-    width: 20%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 25px;
-  }
-  .elemento{
-    flex-basis: 200px;
-    max-height: 1000px;
-    border: 10px double rgb(185, 185, 185);
-  }
-  .nombre-del-campeon {
-    font-size: 60px;
-  }
-  .titulo-del-campeon {
-    font-size: 35px;
-  }
-  .description-text{
-    font-size: 25px;
-  }
-  .elemento-to-roles {
-    display: block;
-    margin: 20px auto 20px auto;
-    
-    width: 700px;
-    height: 800px;
-  }
-  .img-ppl-role {
-    max-height: 780px;
-  }
-  div .tutorial {
-    height: 300px;
-    width: 500px;
-  }
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    .menu a {
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+    #banner {
+        height: 350px;
+        overflow: hidden;
+    }
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+    #banner a {
+        width: 20%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .elemento {
+        flex-basis: 200px;
+        max-height: 1000px;
+        border: 10px double rgb(185, 185, 185);
+    }
+    .nombre-del-campeon {
+        font-size: 60px;
+    }
+    .titulo-del-campeon {
+        font-size: 35px;
+    }
+    .description-text {
+        font-size: 25px;
+    }
+    .elemento-to-roles {
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 700px;
+        height: 800px;
+    }
+    .img-ppl-role {
+        max-height: 780px;
+    }
+    div .tutorial {
+        height: 300px;
+        width: 500px;
+    }
 }
 
-@media(min-width: 360px){
-  #banner h1{
-    font-size: 20pxpx;
-  }
-
-  #banner a {
-    margin-top: 25px;
-  }
-
-  #banner a{
-    width: 20%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  div .tutorial {
-    display: block;
-    width: 315px; 
-    height:  200px;
-    margin: 20px auto 40px auto;
-    border-radius: 8px;
-  }
+@media(min-width: 360px) {
+    #banner h1 {
+        font-size: 20pxpx;
+    }
+    #banner a {
+        margin-top: 25px;
+    }
+    #banner a {
+        width: 20%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    div .tutorial {
+        display: block;
+        width: 315px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        border-radius: 8px;
+    }
 }
 
-@media(width: 411px){
-  #banner h1{
-    font-size: 20px;
-  }
-
-  #banner a{
-    width: 20%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 17px;
-    margin-top: 25px;
-  }
-
-  div .tutorial {
-    display: block;
-    width: 315px; 
-    height:  200px;
-    margin: 20px auto 40px auto;
-    border-radius: 8px;
-  }
-  .bienvenida h2 {
-    font-size: 27px;
-    margin: auto;
-  }
-  .elemento{
-    flex-basis: 200px;
-    max-height: 500px;
-  }
-  .blurb-del-campeon {
-    text-align: center;
-    margin: 10px 5px 10px 5px;
-  }
-  .niveles-del-campeon{
-  font-size: 15px;
-  }
-  div .tutorial {
-    display: block;
-    width: 370px; 
-    height:  200px;
-    margin: 20px auto 40px auto;
-    border-radius: 8px;
-  }
-  footer p {
-    font-size: 15px;
-  }
+@media(width: 411px) {
+    #banner h1 {
+        font-size: 20px;
+    }
+    #banner a {
+        width: 20%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    div .tutorial {
+        display: block;
+        width: 315px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        border-radius: 8px;
+    }
+    .bienvenida h2 {
+        font-size: 27px;
+        margin: auto;
+    }
+    .elemento {
+        flex-basis: 200px;
+        max-height: 500px;
+    }
+    .blurb-del-campeon {
+        text-align: center;
+        margin: 10px 5px 10px 5px;
+    }
+    .niveles-del-campeon {
+        font-size: 15px;
+    }
+    div .tutorial {
+        display: block;
+        width: 370px;
+        height: 200px;
+        margin: 20px auto 40px auto;
+        border-radius: 8px;
+    }
+    footer p {
+        font-size: 15px;
+    }
 }
 
-@media(width: 320px){
-  .elemento{
-    max-height: 700px;
-    display: block;
-    margin: 10px 10px 10px 10px;
-  }
-  .img-ppl-role {
-    max-height: 420px;
-  }
-  div #card-avatar {
-    max-height: 70px;
-  }
-  #campeones-con-maxima-y-minima-vida .elemento-avatar{
-    height: 90px;
-  }
-}
-  
-@media(width: 414px){
-  .elemento{
-    max-height: 460px;
-  }
-  .bienvenida h2 {
-    margin: 4px;
-  }
-  .blurb-del-campeon {
-    text-align: center;
-  }
-  .niveles-del-campeon {
-    font-size: 15px;
-  }
-  .img-ppl-role {
-    max-height: 450px;
-  }
-  div #card-avatar {
-    height: 75px;
-  }
-  #campeones-con-maxima-y-minima-vida .elemento-avatar{
-    height: 90px;
-  }
-  div .tutorial {
-    width: 380px; 
-    height:  200px;
-  }
-  .elemento-to-roles{
-    height: 500px;
-  }
-}
-  
-@media(width: 1024px){
-  div .tutorial {
-  width: 980px; 
-  height:  500px;
-  }  
-  .elemento{
-    flex-basis: 200px;
-    max-height: 970px;
-    border: 10px double rgb(185, 185, 185);
-  }
-  .elemento-to-roles {
-    width: 700px;
-    height: 900px;
-    margin: 20px auto 20px auto;
-  }
-  .img-ppl-role {
-    max-height: 880px;
-  }
-  .roles-titulo {
-    font-size: 50px;
-  }
-  .description-text {
-    font-size: 32px;
-    margin: auto 20px auto 20px;
-  }
-  .upperstyle {
-    font-size:  70px;
-  }
-  #numero-de-campeones {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  .description-text {
-    margin-bottom: 20px;
-  }
-  .todos-los-campeones {
-    width: 700px;
-  }
- 
-  .elemento-avatar {
-    width: 500px;
-    margin-top: 50px;
-  }
-  .avatar {
-    width: 80px;
-    height: 80px;
-  }
-  #todos-los-campeones-por-rol {
-    margin-top: 50px;
-  }
-  div .nombre-en-rol{
-    font-size: 40px;
-  }
-  .elemento-avatar .titulo-en-rol {
-    font-size: 20px;
-  }
-  #campeones-con-maxima-y-minima-vida .avatar {
-    width: 89px;
-    height: 89px;
-  }
-  .boton-pequeño {
-    width: 230px;
-  }
+@media(width: 320px) {
+    .elemento {
+        max-height: 700px;
+        display: block;
+        margin: 10px 10px 10px 10px;
+    }
+    .img-ppl-role {
+        max-height: 420px;
+    }
+    div #card-avatar {
+        max-height: 70px;
+    }
+    #campeones-con-maxima-y-minima-vida .elemento-avatar {
+        height: 90px;
+    }
 }
 
-@media(width: 2560px){
+@media(width: 414px) {
+    .elemento {
+        max-height: 460px;
+    }
+    .bienvenida h2 {
+        margin: 4px;
+    }
+    .blurb-del-campeon {
+        text-align: center;
+    }
+    .niveles-del-campeon {
+        font-size: 15px;
+    }
+    .img-ppl-role {
+        max-height: 450px;
+    }
+    div #card-avatar {
+        height: 75px;
+    }
+    #campeones-con-maxima-y-minima-vida .elemento-avatar {
+        height: 90px;
+    }
+    div .tutorial {
+        width: 380px;
+        height: 200px;
+    }
+    .elemento-to-roles {
+        height: 500px;
+    }
+}
 
-  .todos-los-campeones {
-    width: 500px;
-  }
-  #botones-para-ordenar {
-    width: 500px;
-  }
-  .boton-pequeño {
-    width: 500px;
-  }
-  .elemento-avatar {
-    width: 500px;
-  }
-  #todos-los-campeones-por-rol {
-    margin: 80px auto 80px auto;
-  }
-  .avatar {
-    width: 85px;
-    height: 85px;
-  }
-  .nombre-del-campeon {
-    font-size: 50px;
-  }
-  .titulo-del-campeon {
-    font-size: 24px;
-  }
+@media(width: 1024px) {
+    div .tutorial {
+        width: 980px;
+        height: 500px;
+    }
+    .elemento {
+        flex-basis: 200px;
+        max-height: 970px;
+        border: 10px double rgb(185, 185, 185);
+    }
+    .elemento-to-roles {
+        width: 700px;
+        height: 900px;
+        margin: 20px auto 20px auto;
+    }
+    .img-ppl-role {
+        max-height: 880px;
+    }
+    .roles-titulo {
+        font-size: 50px;
+    }
+    .description-text {
+        font-size: 32px;
+        margin: auto 20px auto 20px;
+    }
+    .upperstyle {
+        font-size: 70px;
+    }
+    #numero-de-campeones {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .description-text {
+        margin-bottom: 20px;
+    }
+    .todos-los-campeones {
+        width: 700px;
+    }
+    .elemento-avatar {
+        width: 500px;
+        margin-top: 50px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    #todos-los-campeones-por-rol {
+        margin-top: 50px;
+    }
+    div .nombre-en-rol {
+        font-size: 40px;
+    }
+    .elemento-avatar .titulo-en-rol {
+        font-size: 20px;
+    }
+    #campeones-con-maxima-y-minima-vida .avatar {
+        width: 89px;
+        height: 89px;
+    }
+    .boton-pequeño {
+        width: 230px;
+    }
+}
+
+@media(width: 2560px) {
+    .todos-los-campeones {
+        width: 500px;
+    }
+    #botones-para-ordenar {
+        width: 500px;
+    }
+    .boton-pequeño {
+        width: 500px;
+    }
+    .elemento-avatar {
+        width: 500px;
+    }
+    #todos-los-campeones-por-rol {
+        margin: 80px auto 80px auto;
+    }
+    .avatar {
+        width: 85px;
+        height: 85px;
+    }
+    .nombre-del-campeon {
+        font-size: 50px;
+    }
+    .titulo-del-campeon {
+        font-size: 24px;
+    }
 }
