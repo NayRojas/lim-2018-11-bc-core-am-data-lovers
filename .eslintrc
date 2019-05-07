@@ -39,6 +39,7 @@
   "extends": "eslint:recommended",
   "globals": {
     "lol": false,
-    "data": false
+    "data": false,
+    "google": false
   }
 }

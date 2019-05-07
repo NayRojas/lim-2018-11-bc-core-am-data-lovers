@@ -22,6 +22,7 @@
             <a id="home2" href="#primera-pantalla">HOME</a>
             <a id="ir-a-roles" href="#segunda-pantalla">ROLES</a>
             <a  href="">CAMPEONES</a>
+            <a  id="go-to-stadistics" href="#fifth-screen">ESTADISTICAS</a>
             <a id="ir-a-tutorial" href="#tutorial">GUÍA RÁPIDA</a>
           </nav>
       </div>
@@ -30,97 +31,113 @@
 <div id= "primera-pantalla">
 <!--Banner-->
   <main>
-      <section id="banner">
-        <img src="img/banner-background.jpg" alt="banner">
-        <div class="container container1000px">
-          <h1> NUEVA GUÍA PARA EL JUGADOR</h1>
-          <a href="#tutorial">Aquí</a>
-        </div>
-      </section>
-    </main>
-    
-<!-- SECCIÓN: PRIMERA HISTORIA DE USUARIO - TOP 5-->
-    <section class="container container1000px background">
-      <div class="bienvenida">
-        <h2>Conoce los 5 Mejores Campeones</h2>
-        <p class="description-text">¡Y empieza tu viaje por la Ruta del Invocador!</p>
-      </div>
-      <section id="top-cinco">
-        <div class ="container container1000px justify-content" id="descripion-de-los-top-5">
-        </div>
-      </section>
-    </section>    
-<!-- Tutorial -->
-        <p class= "end">Aprende a leer estadisticas Lol en 20 segundos</p>
-        <!--<iframe id="tutorial" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>-->
-        <div>
-            <a class="tutorial"  >
-              <img class="tutorial" src="img/img-tutorial.png" alt="imagen-del-tutorial">
-            </a>
-        </div>
-        
-<!-- Botón para conocer todos los roles: lleva a segunda historia -->
+    <section id="banner">
       <div>
-        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Go to Roles</button>
+          <img class="mySlides" src="img/banner-background.jpg" alt="banner">
+          <img class="mySlides" src="img/banner-background2.jpg" alt="banner">
+          <img class="mySlides" src="img/banner-background3.jpg" alt="banner">
+          <img class="mySlides" src="img/banner-background4.jpg" alt="banner">
       </div>
+      <div class="container container1000px">
+        <h1> THE BEST GUIDE FOR THE BEGGINER</h1>
+        <a href="#tutorial">Click here</a>
+      </div>
+    </section>
+  </main>
+  
+<!-- SECCIÓN: PRIMERA HISTORIA DE USUARIO - TOP 5-->
+  <section class="container container1000px background">
+    <div class="bienvenida">
+      <h2>Champions of the week</h2>
+      <p class="description-text">¡Every week you´ll have a set of champions to win!</p>
+    </div>
+    <section id="top-cinco">
+      <div class ="container container1000px justify-content" id="descripion-de-los-top-5">
+      </div>
+    </section>
+  </section>      
+<!-- Tutorial -->
+  <p class= "end">Lear to play in 20 seconds (not a joke)</p>
+  <iframe id="tutorial" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+  <!--<div>
+      <a class="tutorial"  >
+        <img class="tutorial" src="img/img-tutorial.png" alt="imagen-del-tutorial">
+      </a>
+  </div>-->
+
+<!-- Botón para conocer todos los roles: lleva a segunda historia -->
+  <div>
+    <button id="todos-los-campeones" class="todos-los-campeones" type="button">Go to Roles</button>
+  </div>
 </div>
 
 <!-- SECCIÓN: SEGUNDA HISTORIA DE USUARIO - ROLES-->
-<section id="segunda-pantalla" class="container container1000px">
+  <section id="segunda-pantalla" class="container container1000px">
   <div class="bienvenida">
       <h1 class="roles-titulo">Be an Expert in Champeon Roles </h1>
       <p class="description-text">Get to know all the champions by role, and take game advantage in the Summoner's route</p>
   </div>
   <div id="todos-los-roles"></div>
-</section>
+  </section>
 
 <!-- SECCIÓN: TERCERA HISTORIA DE USUARIO - ROLES-->
-<section id="tercera-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
-  <div id="titulo-del-rol" class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-    <h1 id= "titulo" class="roles-titulo upperstyle"></h1>
-    <p id="numero-de-campeones" class="description-text"></p>
-    <p id="description-del-rol" class="description-text"></p>
-  </div>    
-  <div id="botones-para-mayor-y-menor-vida">
-    <button id="boton-para-mayor-y-menor-vida" class="todos-los-campeones botongris">
-      Maximun Champeons with Life (Hp)
-    </button>
-  </div>
-  <div id="botones-para-ordenar">
-    <button class="todos-los-campeones boton-pequeño" id="ordenar-ascendente">Order by A-Z</button>
-    <button class="todos-los-campeones boton-pequeño" id="ordenar-descendente">Order by Z-A</button>
-  </div>
-  <div id="todos-los-campeones-por-rol" ></div>
-  <div>
-    <button id="todos-los-cardroles" class="todos-los-campeones margin-top">Roles in the Game</button>
-  </div>
-</section>
+  <section id="tercera-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
+    <div id="titulo-del-rol" class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
+      <h1 id= "titulo" class="roles-titulo upperstyle"></h1>
+      <p id="numero-de-campeones" class="description-text"></p>
+      <p id="description-del-rol" class="description-text"></p>
+    </div>    
+    <div id="botones-para-mayor-y-menor-vida">
+      <button id="boton-para-mayor-y-menor-vida" class="todos-los-campeones botongris">
+        Maximun Champeons with Life (Hp)
+      </button>
+    </div>
+    <div id="botones-para-ordenar">
+      <button class="todos-los-campeones boton-pequeño" id="ordenar-ascendente">Order by A-Z</button>
+      <button class="todos-los-campeones boton-pequeño" id="ordenar-descendente">Order by Z-A</button>
+    </div>
+    <div id="todos-los-campeones-por-rol" ></div>
+    <div>
+      <button id="todos-los-cardroles" class="todos-los-campeones margin-top">Roles in the Game</button>
+    </div>
+  </section>
 
 <!-- SECCIÓN: CUARTA HISTORIA DE USUARIO - ROLES-->
-<section id="cuarta-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
-  <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-      <h1 class="roles-titulo">Champions with Maximun Life (Hp)</h1>
-  </div>
-  <div id ="campeones-con-maxima-y-minima-vida"></div>
-</section>
+  <section id="cuarta-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
+    <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
+        <h1 class="roles-titulo">Champions with Maximun Life (Hp)</h1>
+    </div>
+    <div id ="campeones-con-maxima-y-minima-vida"></div>
+  </section>
+
+  <section id="fifth-screen">
+    <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
+      <h1 class="roles-titulo">How many champions are there per category?</h1>
+    </div>
+    <div id ="champions-per-category">
+      <div id="filter-div"></div>
+      <div id="chart-div"></div>
+    </div>
+  </section>
 
 <!-- FOOTER-->
-      <footer>
-        <div id="logo-en-footer">
-            <img src="img/lol.png" alt="Logo para footer" >
-        </div>
-        <div id="redes-en-footer">
-          <a class ="icon-facebook" href="https://es-la.facebook.com/leagueoflegends/"></a>
-          <a class ="icon-instagram" href="https://www.instagram.com/leagueoflegends/?hl=es"></a>
-          <a class ="icon-youtube-play" href="https://www.youtube.com/user/RiotGamesInc"></a>
-          <a class ="icon-globe" href="https://euw.leagueoflegends.com/es/"></a>
-        </div>
-        <p>Copyright © Todos los Derechos Reservados </p>
-      </footer>
+    <footer>
+      <div id="logo-en-footer">
+          <img src="img/lol.png" alt="Logo para footer" >
+      </div>
+      <div id="redes-en-footer">
+        <a class ="icon-facebook" href="https://es-la.facebook.com/leagueoflegends/"></a>
+        <a class ="icon-instagram" href="https://www.instagram.com/leagueoflegends/?hl=es"></a>
+        <a class ="icon-youtube-play" href="https://www.youtube.com/user/RiotGamesInc"></a>
+        <a class ="icon-globe" href="https://euw.leagueoflegends.com/es/"></a>
+      </div>
+      <p>Copyright © Todos los Derechos Reservados </p>
+    </footer>
 
   
     <div id="root"></div>
     <script src="./data/lol/lol.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
     <!--<script src=”prefixfree.min.js” type="text/javascript"></script> -->
