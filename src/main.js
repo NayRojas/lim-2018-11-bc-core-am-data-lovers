@@ -3,6 +3,7 @@ document.getElementById('primera-pantalla').style.display = 'block';
 document.getElementById('segunda-pantalla').style.display = 'none';
 document.getElementById('tercera-pantalla').style.display = 'none';
 document.getElementById('cuarta-pantalla').style.display = 'none';
+document.getElementById('fifth-screen').style.display = 'none';
 
 /* Variables para la manipulación de botones y elementos*/
 const containerList = document.getElementById('descripion-de-los-top-5'); // CONTENEDOR 1 : Elemento padre de los primeros 5
@@ -17,6 +18,7 @@ const buttonToMaxAndMinLife = document.getElementById('boton-para-mayor-y-menor-
 const goToHome = document.getElementById('home'); // BOTON : Icono logotipo de LOL en la esquina superior izquierda, reinicia la página
 const goToHome2 = document.getElementById('home2'); // MENU : Home
 const goToRoles = document.getElementById('ir-a-roles'); //  MENU : Roles
+const goToStatistics = document.getElementById('go-to-stadistics'); //  MENU : Roles
 const goToTutorial = document.getElementById('ir-a-tutorial'); //  MENU : Tutorial
 
 /* Esta constante almacena los datos de las imagenes de los roles a mostrar en la segunda función*/
@@ -222,6 +224,7 @@ goToHome.addEventListener('click', () => {
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'none';
   document.getElementById('cuarta-pantalla').style.display = 'none';
+  document.getElementById('fifth-screen').style.display = 'none';
   cleanValues();
 });
 /* MENU: Boton para ir a home*/
@@ -246,6 +249,50 @@ goToTutorial.addEventListener('click', () => {
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
 });
+/* MENU: Boton para ir a estadisticas*/
+goToStatistics.addEventListener('click', () => {
+  document.getElementById('primera-pantalla').style.display = 'none'; 
+  document.getElementById('segunda-pantalla').style.display = 'none';
+  document.getElementById('tercera-pantalla').style.display = 'none';
+  document.getElementById('cuarta-pantalla').style.display = 'none';
+  document.getElementById('fifth-screen').style.display = 'block';
+  document.getElementById('menu-bar').style.transform = 'translateX(-100%)';
+
+  let assassin = lol.filterData(window.LOL.data, 'Assassin');
+  let tank = lol.filterData(window.LOL.data, 'Tank');
+  let jungler = lol.filterData(window.LOL.data, 'Mage');
+  let support = lol.filterData(window.LOL.data, 'Support');
+  let marksman = lol.filterData(window.LOL.data, 'Marksman');
+  let fighter = lol.filterData(window.LOL.data, 'Fighter');
+
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    let data = google.visualization.arrayToDataTable([
+      ['Name', 'Type champion'],
+      ['Assassin', assassin.length],
+      ['Tank', tank.length],
+      ['Mage', jungler.length],
+      ['Support', support.length],
+      ['Marksman', marksman.length],
+      ['Fighter', fighter.length]
+    ]);
+    let options = {
+      title: 'My Daily Activities',
+      backgroundColor: 'black',
+      legend: {alignment: 'center', position: 'right', marginBottom: 10, textStyle: {color: 'white', fontSize: 10}},
+      slices: 
+      {0: {color: '#4d3d00'}, 1: {color: '#806600'}, 3: {color: '#b38f00'}, 4: {color: '#e6b800'}, 5: {color: '#ffd11a'}},
+      pieSliceBorderColor: '#cc9900', 
+      pieSliceTextStyle: {fontSize: 10},
+      chartArea: {top: 30, bottom: 20, width: '60%', height: '85%'},
+      heigth: 300 
+    };
+    let chart = new google.visualization.PieChart(document.getElementById('champions-per-category'));
+    chart.draw(data, options);
+    console.log('entro');
+  }
+});
 /* BOTON: Evento para regresar a todos los roles en el botón "Roles in the game*/
 buttonToRoles.addEventListener('click', () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
@@ -268,6 +315,7 @@ const showThridScreen = () => {
   document.getElementById('primera-pantalla').style.display = 'none'; 
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'block';
+  document.getElementById('fifth-screen').style.display = 'none';
 };
 /* OCULTAR: Función para ocultar la primera, segunda, tercera y mostrar la cuarta pantalla*/
 const showFourthScreen = () => {
@@ -275,7 +323,8 @@ const showFourthScreen = () => {
   document.getElementById('segunda-pantalla').style.display = 'none';
   document.getElementById('tercera-pantalla').style.display = 'none';
   document.getElementById('cuarta-pantalla').style.display = 'block';
-};  
+  document.getElementById('fifth-screen').style.display = 'none';
+}; 
 /* LIMPIAR: Función que limpia los campos de las demas variables*/
 const cleanValues = () => {
   window.templateListOfRoles = '';
@@ -285,3 +334,27 @@ const cleanValues = () => {
   window.templateWithMaxLife = '';
   containerChampionsWithMaxLife.innerHTML = '';
 };
+
+fetch('https://raw.githubusercontent.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers/master/src/data/lol/lol.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    let dinamicDataLol = data.lol;
+    console.log(dinamicDataLol);
+  });
+
+/* SLIDEBANNER: Declaration for slideshow banner */
+let myIndex = 0;
+carousel();
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName('mySlides');
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex - 1].style.display = 'block';  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}

@@ -87,3 +87,4 @@ window.lol = {
   calculateStats: calminAndMaxHpChampion
 };
 
+

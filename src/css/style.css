@@ -575,6 +575,11 @@ a + a{
     margin-top:20px;
   }
 
+
+.mySlides{
+  animation: slide 0.5s forwards;
+} 
+
   footer {
     max-width: 100%;
     max-height: 60%;
